@@ -5,7 +5,7 @@ Choose a program to open its checkout on Stripe. Each subscription renews monthl
 | Software | Subscription | Checkout |
 |---|---|---|
 | Visual Engineering | A$100 per month | [Subscribe to Visual Engineering](https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01) |
-| OzziGeoLab | A$100 per month | [Subscribe to OzziGeoLab](https://buy.stripe.com/14A5kCa250Pr7Yeac0afS02) |
+| OzziGeoLab | Temporarily paused | New subscriptions are paused. |
 | OzziPDF | A$100 per month | [Subscribe to OzziPDF](https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03) |
 | OzziLocation | A$100 per month | [Subscribe to OzziLocation](https://buy.stripe.com/9B614mdeh1Tvdiybg4afS04) |
 
