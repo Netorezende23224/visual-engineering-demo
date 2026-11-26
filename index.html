@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Software subscriptions · Visual Engineering and Ozzi</title>
+<style>
+:root{color-scheme:light;--ink:#162c31;--green:#075d56;--paper:#f7f8f5;--line:#bdceca}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.55 system-ui,sans-serif}
+main,nav{width:min(1140px,92%);margin:auto}nav{border-bottom:1px solid var(--line);padding:20px 0;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+a{color:var(--green);text-underline-offset:.2em}nav a{font-size:.9rem}nav a:first-child{font-weight:700;color:var(--ink);margin-right:auto}
+a:focus-visible{outline:3px solid #ba5020;outline-offset:4px}
+section{margin:55px 0;scroll-margin-top:12px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.15;letter-spacing:-.035em}
+h1{font-size:clamp(2.5rem,6vw,4.75rem);margin-bottom:18px}h2{font-size:clamp(1.8rem,3.5vw,2.7rem);margin-bottom:14px}h3{font-size:1.28rem}
+.intro{max-width:42rem}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:24px}
+article{padding:23px 20px 20px;background:white;border:1px solid var(--line);border-radius:7px;display:flex;flex-direction:column}
+.price{font-size:1.9rem;letter-spacing:-.04em;margin:20px 0}.price small{font-size:.9rem;letter-spacing:0;color:#4f6263}
+.buy{display:flex;justify-content:space-between;align-items:center;background:var(--green);color:#fff;text-decoration:none;font-weight:650;border-radius:4px;padding:11px 14px;margin-top:auto}
+.buy:hover{background:#084a46}.feature{padding-top:30px;border-top:1px solid var(--line)}
+.examples{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}figure{margin:0}figure img{display:block;width:100%;height:auto;background:white;border:1px solid var(--line);border-radius:5px}figcaption{font-size:.9rem;padding-top:6px;color:#44595b}
+.note{max-width:60rem;margin-top:14px;color:#405658;font-size:.9rem}
+@media(max-width:920px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.examples,.grid{grid-template-columns:1fr}section{margin:36px 0}article{padding:18px}.price{margin:12px 0}nav{gap:14px}}
+</style></head><body>
+<nav aria-label="Sales page"><a href="#subscriptions">Subscriptions</a><a href="#windlab">WindLab example</a><a href="#acquisition">Acquisition</a></nav>
+<main><section id="subscriptions"><h1>Software subscriptions</h1><p class="intro">Choose a program to subscribe through Stripe. Each subscription renews monthly in Australian dollars.</p>
+<div class="grid"><article><h3>Visual Engineering</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01" aria-label="Subscribe to Visual Engineering">Subscribe <span aria-hidden="true">↗</span></a></article>
+<article><h3>OzziGeoLab</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/14A5kCa250Pr7Yeac0afS02" aria-label="Subscribe to OzziGeoLab">Subscribe <span aria-hidden="true">↗</span></a></article>
+<article><h3>OzziPDF</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03" aria-label="Subscribe to OzziPDF">Subscribe <span aria-hidden="true">↗</span></a></article>
+<article><h3>OzziLocation</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/9B614mdeh1Tvdiybg4afS04" aria-label="Subscribe to OzziLocation">Subscribe <span aria-hidden="true">↗</span></a></article></div></section>
+<section id="windlab" class="feature"><h2>Visual Engineering · WindLab</h2><p class="intro">WindLab for Windows looks up addresses in Queensland and New South Wales. Review the indicative wind region, compare wind actions across building faces and export the results to PDF. The Visual Engineering subscription covers this evaluation workflow for one engineering practice.</p>
+<div class="examples"><figure><img src="media/roof-pressures.png" alt="WindLab roof plan with wind pressure zones" width="1188" height="586"><figcaption>Roof corner, edge and field zones</figcaption></figure>
+<figure><img src="media/wall-pressures.png" alt="WindLab pressure zones on the wall elevation" width="1188" height="586"><figcaption>Wall pressures for the same example building</figcaption></figure></div>
+<a href="media/sample-wind-report.pdf">Download the example wind report (PDF)</a><p class="note">The example uses a fictional building. Engineers must verify the wind region, site assumptions, geometry, openings and pressure coefficients before using results on a project. Whole-shed stability and connection qualification remain under development.</p></section>
+<section id="acquisition" class="feature"><h2>Visual Engineering acquisition</h2><p class="intro">The asking price for an exclusive acquisition of the source and transferable rights is A$20,000. Contact the owner to discuss package contents, third-party licences and handover terms.</p><p><a href="https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry">Enquire about acquisition on GitHub</a></p></section>
+</main></body></html>
