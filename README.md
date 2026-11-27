@@ -6,9 +6,18 @@ Explore the [Visual Engineering product site](https://netorezende23224.github.io
 
 | Tool | What to try |
 | --- | --- |
-| [Shed 3D](https://netorezende23224.github.io/visual-engineering-demo/#guide-shed) | Orbit the 10 × 18 m sample, switch to plan or end view, toggle the member groups and select SH-027. Watch the desktop walkthrough to see how to find the Top Hat fixing. [Open the fixing detail](media/shed-detail.webp) |
-| [WindLab](https://netorezende23224.github.io/visual-engineering-demo/#windlab) | Compare the roof and wall pressures in a west-wind case for a fictional 12 × 8 m building. [Read the example report](media/sample-wind-report.pdf) |
-| [Drawing Takeoff](https://netorezende23224.github.io/visual-engineering-demo/#takeoff) | Trace a four-metre concrete beam, edit its imposed line load and inspect deflection against the project limit. [Read the beam report excerpt](media/takeoff-example.pdf) |
+| [Shed 3D](https://netorezende23224.github.io/visual-engineering-demo/#guide-shed) | Inspect portal frames, purlins, wind actions and connection details. |
+| [Drawing Takeoff](https://netorezende23224.github.io/visual-engineering-demo/#takeoff) | Calibrate drawings, measure members and trace quantities to a mark. |
+| [WindLab & bracing](https://netorezende23224.github.io/visual-engineering-demo/#windlab) | Review wind pressures by face, exposure and load case. |
+| [Project summary](https://netorezende23224.github.io/visual-engineering-demo/#project-summary) | Review quantities, member results and outstanding checks across a project. |
+| [Foundation / soil](https://netorezende23224.github.io/visual-engineering-demo/#foundation-soil) | Screen a founding horizon and review soil, settlement and foundation assumptions. |
+| [Calculators](https://netorezende23224.github.io/visual-engineering-demo/#calculators) | Work with the structural worksheets, including slab loads and concrete design inputs. |
+| [Truss designer](https://netorezende23224.github.io/visual-engineering-demo/#truss-designer) | Generate truss geometry and compare chord and web layouts. |
+| [Beam analysis](https://netorezende23224.github.io/visual-engineering-demo/#beam-analysis) | Inspect reactions, shear, bending moments and deflections for declared supports. |
+| [FEM](https://netorezende23224.github.io/visual-engineering-demo/#fem) | Inspect finite-element responses for beam and plate models. |
+| [Posts & walls](https://netorezende23224.github.io/visual-engineering-demo/#posts-walls) | Review section properties, compression and load transfer in vertical members. |
+| [Lintel 3D](https://netorezende23224.github.io/visual-engineering-demo/#lintel-3d) | Inspect steel lintels with or without webs, or a solid timber member. |
+| [Steel connections](https://netorezende23224.github.io/visual-engineering-demo/#steel-connections) | Inspect plates, fasteners, welds and governing component checks. |
 
 The browser viewer displays 122 members exported from a worked desktop example. Its camera and visibility controls let you inspect that geometry. The calculations and fixing detail shown in the walkthrough belong to the recorded sample.
 

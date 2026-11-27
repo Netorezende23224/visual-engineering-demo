@@ -25,7 +25,6 @@
   function followFragment() {
     const index = tabs.findIndex(tab => tab.hash === location.hash);
     if (index !== -1) showGuide(index);
-    if (location.hash === '#acquisition') document.getElementById('acquisition').open = true;
   }
 
   nav.setAttribute('role', 'tablist');

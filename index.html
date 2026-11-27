@@ -29,8 +29,7 @@
       <a class="brand" href="#top" aria-label="Visual Engineering home"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Visual Engineering</span></a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#shed-3d">Shed 3D</a>
-        <a href="#guides">Guides</a>
-        <a href="#tools">All tools</a>
+        <a href="#guides">Tool guides</a>
         <a href="#subscriptions">Pricing</a>
       </nav>
       <a class="head-cta" href="#subscriptions">View plans<span class="arrow diagonal" aria-hidden="true"></span></a>
@@ -83,15 +82,23 @@
     </section>
 
     <section class="guides wrap" id="guides" aria-labelledby="guides-title">
-      <div class="section-intro">
+      <div class="section-intro" id="tools">
         <h2 id="guides-title">Tool guides</h2>
-        <p>Follow a worked example from its inputs to the result shown in the application.</p>
+        <p>Choose one of the 12 tools to explore a fixed example from the Windows application.</p>
       </div>
       <nav class="guide-nav" aria-label="Choose a tool guide" data-guide-nav>
-        <a id="tab-shed" href="#guide-shed"><span class="guide-icon icon-shed" aria-hidden="true"></span>Shed 3D</a>
-        <a id="tab-wind" href="#windlab"><span class="guide-icon icon-wind" aria-hidden="true"></span>WindLab</a>
-        <a id="tab-takeoff" href="#takeoff"><span class="guide-icon icon-plan" aria-hidden="true"></span>Drawing Takeoff</a>
-        <a id="tab-lintel" href="#lintel-3d">Lintel 3D</a>
+        <a id="tab-guide-shed" href="#guide-shed">Shed 3D</a>
+        <a id="tab-takeoff" href="#takeoff">Drawing Takeoff</a>
+        <a id="tab-windlab" href="#windlab">WindLab &amp; bracing</a>
+        <a id="tab-project-summary" href="#project-summary">Project summary</a>
+        <a id="tab-foundation-soil" href="#foundation-soil">Foundation / soil</a>
+        <a id="tab-calculators" href="#calculators">Calculators</a>
+        <a id="tab-truss-designer" href="#truss-designer">Truss designer</a>
+        <a id="tab-beam-analysis" href="#beam-analysis">Beam analysis</a>
+        <a id="tab-fem" href="#fem">FEM</a>
+        <a id="tab-posts-walls" href="#posts-walls">Posts &amp; walls</a>
+        <a id="tab-lintel-3d" href="#lintel-3d">Lintel 3D</a>
+        <a id="tab-steel-connections" href="#steel-connections">Steel connections</a>
       </nav>
 
       <article id="guide-shed" class="guide-panel" data-guide-panel aria-labelledby="shed-guide-heading">
@@ -166,24 +173,65 @@
           <figcaption><span>Lintel 3D · fixed example</span><span id="lintel-readout" aria-live="polite">C90 · 6 webs</span></figcaption>
         </figure>
       </article>
+      <article id="project-summary" class="guide-panel" data-guide-panel aria-labelledby="project-summary-heading">
+        <div class="guide-text">
+          <h3 id="project-summary-heading">Compare the steel allowance for a lintel</h3>
+          <p>A 2.50 m trial lintel, C90 frame and two 300 × 1.15 mm face plates.</p>
+        </div>
+        <dl class="guide-cases"><dt>With 6 webs</dt><dd>Frame and plates weigh 21.15 kg.</dd><dt>Without webs</dt><dd>Removing all six vertical members reduces the allowance to 19.13 kg.</dd></dl>
+      </article>
+      <article id="foundation-soil" class="guide-panel" data-guide-panel aria-labelledby="foundation-soil-heading">
+        <div class="guide-text">
+          <h3 id="foundation-soil-heading">Check the service pressure beneath a strip footing</h3>
+          <p>Centred strip footing, 0.60 m wide, concrete depth 0.30 m and unit weight 24 kN/m³. Service contact pressure only.</p>
+        </div>
+        <dl class="guide-cases"><dt>30 kN/m line load</dt><dd>Calculated contact pressure 57.2 kPa.</dd><dt>60 kN/m line load</dt><dd>Calculated contact pressure 107.2 kPa.</dd></dl>
+      </article>
+      <article id="calculators" class="guide-panel" data-guide-panel aria-labelledby="calculators-heading">
+        <div class="guide-text">
+          <h3 id="calculators-heading">Compare slab loads at two thicknesses</h3>
+          <p>Slab worksheet with concrete at 24 kN/m³ and imposed load of 2 kPa.</p>
+        </div>
+        <dl class="guide-cases"><dt>150 mm slab</dt><dd>Dead load 3.60 kPa. Service G + Q is 5.60 kPa.</dd><dt>180 mm slab</dt><dd>Dead load 4.32 kPa. Service G + Q is 6.32 kPa.</dd></dl>
+      </article>
+      <article id="truss-designer" class="guide-panel" data-guide-panel aria-labelledby="truss-designer-heading">
+        <div class="guide-text">
+          <h3 id="truss-designer-heading">Compare the layouts of two gable trusses</h3>
+          <p>Gable truss using the default desktop sections and a 1 m target panel length.</p>
+        </div>
+        <dl class="guide-cases"><dt>4 m span</dt><dd>17 model members with 16.01 m total member length.</dd><dt>6 m span</dt><dd>25 model members with 25.99 m total member length.</dd></dl>
+      </article>
+      <article id="beam-analysis" class="guide-panel" data-guide-panel aria-labelledby="beam-analysis-heading">
+        <div class="guide-text">
+          <h3 id="beam-analysis-heading">Trace a change in span to the bearing reactions</h3>
+          <p>Simply supported beam with a uniform line load of 6 kN/m.</p>
+        </div>
+        <dl class="guide-cases"><dt>4 m span</dt><dd>Peak moment 12 kN·m. Each bearing carries 12 kN.</dd><dt>6 m span</dt><dd>Peak moment 27 kN·m. Each bearing carries 18 kN.</dd></dl>
+      </article>
+      <article id="fem" class="guide-panel" data-guide-panel aria-labelledby="fem-heading">
+        <div class="guide-text">
+          <h3 id="fem-heading">Compare beam deflection with two end restraints</h3>
+          <p>6 m beam, 300 × 500 mm section, E = 30 GPa, service load 10 kN/m, 12 elements.</p>
+        </div>
+        <dl class="guide-cases"><dt>Simple supports</dt><dd>Peak service deflection 1.800 mm.</dd><dt>Fixed ends</dt><dd>Peak service deflection 0.360 mm.</dd></dl>
+      </article>
+      <article id="posts-walls" class="guide-panel" data-guide-panel aria-labelledby="posts-walls-heading">
+        <div class="guide-text">
+          <h3 id="posts-walls-heading">Compare the section properties of two C90 studs</h3>
+          <p>Ideal lipped C90 stud section with 40 mm flanges and 10 mm returns.</p>
+        </div>
+        <dl class="guide-cases"><dt>0.75 mm BMT</dt><dd>Gross section area 142.5 mm². Steel mass 1.119 kg/m.</dd><dt>0.95 mm BMT</dt><dd>Gross section area 180.5 mm². Steel mass 1.417 kg/m.</dd></dl>
+      </article>
+      <article id="steel-connections" class="guide-panel" data-guide-panel aria-labelledby="steel-connections-heading">
+        <div class="guide-text">
+          <h3 id="steel-connections-heading">Follow a plate block shear check</h3>
+          <p>Block shear benchmark. Net shear area 720 mm², net tension area 1,200 mm², gross shear area 1,050 mm², Fu 440 MPa, Fy 320 MPa and kbs = 1.</p>
+        </div>
+        <dl class="guide-cases"><dt>Nominal resistance</dt><dd>Fracture 718.08 kN and gross shear mechanism 729.60 kN. The smaller value governs.</dd><dt>Design resistance</dt><dd>Component result 538.56 kN with the benchmark factor of 0.75. The complete connection still requires review.</dd></dl>
+      </article>
       <p class="example-note">These worked examples illustrate the software. The responsible engineer must verify site inputs, restraints and calculation results and decide whether to approve the design.</p>
     </section>
 
-    <section class="wrap tool-catalogue" id="tools" aria-labelledby="catalogue-title">
-      <div class="section-intro"><h2 id="catalogue-title">All engineering tools</h2><p>Explore the Windows toolset through limited, fixed examples. The private browser workspace is in development.</p></div>
-      <div class="tool-examples"><details class="tool-example"><summary>Shed 3D</summary><p>Inspect portal frames, purlins, wind actions and connection details.</p><a class="inline-link" href="#shed-3d">Explore the shed model <span aria-hidden="true">→</span></a></details>
-<details class="tool-example"><summary>Drawing Takeoff</summary><p>Calibrate drawings, measure members and trace quantities to a mark.</p><a class="inline-link" href="#takeoff">Open the CB5 worked example <span aria-hidden="true">→</span></a></details>
-<details class="tool-example"><summary>Wind &amp; bracing</summary><p>Review wind pressures by face, exposure and load case.</p><a class="inline-link" href="#windlab">Compare roof and wall pressures <span aria-hidden="true">→</span></a></details>
-<details class="tool-example"><summary>Project summary</summary><p>Review quantities, member results and outstanding checks across a project.</p><p>A 2.50 m trial lintel, C90 frame and two 300 × 1.15 mm face plates.</p><dl><dt>With 6 webs</dt><dd>Frame and plates weigh 21.15 kg.</dd><dt>Without webs</dt><dd>Removing all six vertical members reduces the allowance to 19.13 kg.</dd></dl></details>
-<details class="tool-example"><summary>Foundation / soil</summary><p>Screen a founding horizon and review soil, settlement and foundation assumptions.</p><p>Centred strip footing, 0.60 m wide, concrete depth 0.30 m and unit weight 24 kN/m³. Service contact pressure only.</p><dl><dt>30 kN/m line load</dt><dd>Calculated contact pressure 57.2 kPa.</dd><dt>60 kN/m line load</dt><dd>Calculated contact pressure 107.2 kPa.</dd></dl></details>
-<details class="tool-example"><summary>Calculators</summary><p>Work with the structural worksheets, including slab loads and concrete design inputs.</p><p>Slab worksheet with concrete at 24 kN/m³ and imposed load of 2 kPa.</p><dl><dt>150 mm slab</dt><dd>Dead load 3.60 kPa. Service G + Q is 5.60 kPa.</dd><dt>180 mm slab</dt><dd>Dead load 4.32 kPa. Service G + Q is 6.32 kPa.</dd></dl></details>
-<details class="tool-example"><summary>Truss designer</summary><p>Generate truss geometry and compare chord and web layouts.</p><p>Gable truss using the default desktop sections and a 1 m target panel length.</p><dl><dt>4 m span</dt><dd>17 model members with 16.01 m total member length.</dd><dt>6 m span</dt><dd>25 model members with 25.99 m total member length.</dd></dl></details>
-<details class="tool-example"><summary>Beam analysis</summary><p>Inspect reactions, shear, bending moments and deflections for declared supports.</p><p>Simply supported beam with a uniform line load of 6 kN/m.</p><dl><dt>4 m span</dt><dd>Peak moment 12 kN·m. Each bearing carries 12 kN.</dd><dt>6 m span</dt><dd>Peak moment 27 kN·m. Each bearing carries 18 kN.</dd></dl></details>
-<details class="tool-example"><summary>FEM</summary><p>Inspect finite-element responses for beam and plate models.</p><p>6 m beam, 300 × 500 mm section, E = 30 GPa, service load 10 kN/m, 12 elements.</p><dl><dt>Simple supports</dt><dd>Peak service deflection 1.800 mm.</dd><dt>Fixed ends</dt><dd>Peak service deflection 0.360 mm.</dd></dl></details>
-<details class="tool-example"><summary>Posts &amp; walls</summary><p>Review section properties, compression and load transfer in vertical members.</p><p>Ideal lipped C90 stud section with 40 mm flanges and 10 mm returns.</p><dl><dt>0.75 mm BMT</dt><dd>Gross section area 142.5 mm². Steel mass 1.119 kg/m.</dd><dt>0.95 mm BMT</dt><dd>Gross section area 180.5 mm². Steel mass 1.417 kg/m.</dd></dl></details>
-<details class="tool-example"><summary>Lintel calculator</summary><p>Inspect steel lintels with or without webs, or a solid timber member.</p><a class="inline-link" href="#lintel-3d">Rotate the lintel example <span aria-hidden="true">→</span></a></details>
-<details class="tool-example"><summary>Steel connections</summary><p>Inspect plates, fasteners, welds and governing component checks.</p><p>Block shear benchmark. Net shear area 720 mm², net tension area 1,200 mm², gross shear area 1,050 mm², Fu 440 MPa, Fy 320 MPa and kbs = 1.</p><dl><dt>Nominal resistance</dt><dd>Fracture 718.08 kN and gross shear mechanism 729.60 kN. The smaller value governs.</dd><dt>Design resistance</dt><dd>Component result 538.56 kN with the benchmark factor of 0.75. The complete connection still requires review.</dd></dl></details></div>
-    </section>
 
     <section class="subscriptions" id="subscriptions" aria-labelledby="pricing-heading">
       <div class="wrap">
@@ -200,7 +248,7 @@
             <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-outline" href="https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03" aria-label="Subscribe to OzziPDF for A$100 per month">Subscribe <span class="arrow diagonal" aria-hidden="true"></span></a></div>
           </article>
         </div>
-        <details id="acquisition" class="acquisition"><summary>Exclusive acquisition · A$250,000</summary><p>The asking price for the source and transferable rights is <strong>A$250,000</strong> for an exclusive acquisition. Discuss the package, third-party licences and handover terms with the owner. <a href="https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry">Enquire on GitHub <span class="arrow diagonal" aria-hidden="true"></span></a></p></details>
+        <section id="acquisition" class="acquisition"><h3>Exclusive acquisition</h3><p>The asking price for the Visual Engineering source and transferable rights is <strong>A$250,000</strong>. Discuss the package, third-party licences and handover terms with the owner. <a href="https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry">Enquire on GitHub <span class="arrow diagonal" aria-hidden="true"></span></a></p></section>
       </div>
     </section>
   </main>
