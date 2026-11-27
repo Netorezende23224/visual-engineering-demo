@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:01.982 --> 00:00:07.402
+Confirm an interior support with no transferred moment, a full perimeter and normal-weight reinforced concrete. This example has a 300 by 600 mm column.
+
+00:00:07.402 --> 00:00:12.820
+At 160 mm mean effective depth the critical perimeter is 80 mm outside the column faces. A 400 kN net action uses 76.1 percent of the design capacity.
+
+00:00:12.820 --> 00:00:18.281
+Increase the reviewed net action to 600 kN. Demand now exceeds the calculated capacity of 525.608 kN.
+
+00:00:18.281 --> 00:00:23.800
+Study a 240 mm slab with a 200 mm effective depth. For the same 600 kN action the capacity is 700.092 kN. Reassess the net action for any actual change of section.
+
+00:00:23.800 --> 00:00:29.916
+Issue the checked revision in Project Summary. The report records the section, net action, design provisions and perimeter calculation for engineer review.

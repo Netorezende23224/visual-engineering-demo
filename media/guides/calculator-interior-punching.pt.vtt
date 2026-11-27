@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:01.982 --> 00:00:07.402
+Confirme o apoio interno sem transferência de momento, com perímetro completo e concreto armado de densidade normal. O pilar deste exemplo mede 300 por 600 mm.
+
+00:00:07.402 --> 00:00:12.820
+Com altura útil média de 160 mm, o perímetro crítico está a 80 mm das faces do pilar. A solicitação líquida de 400 kN utiliza 76,1% da capacidade de cálculo.
+
+00:00:12.820 --> 00:00:18.281
+Aumente a solicitação líquida para 600 kN. A demanda supera a capacidade calculada de 525,608 kN.
+
+00:00:18.281 --> 00:00:23.800
+Estude uma laje de 240 mm com altura útil de 200 mm. Para os mesmos 600 kN, a capacidade é de 700,092 kN. Reavalie a solicitação líquida ao alterar a seção do projeto.
+
+00:00:23.800 --> 00:00:29.916
+Emita a revisão calculada no Project Summary. O relatório registra a seção, a solicitação líquida, a referência normativa e a memória de punção para revisão pelo engenheiro.
