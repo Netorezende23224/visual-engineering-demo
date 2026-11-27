@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.334 --> 00:00:01.472
+Create a gable roof truss study. Set the span to 6 m and the tributary spacing to 0.9 m.
+
+00:00:01.472 --> 00:00:04.698
+Select SHS chords and webs. Use signed wind pressures for uplift and review the permanent and imposed actions on the chords.
+
+00:00:04.698 --> 00:00:09.567
+Calculate the truss. Review the 2D geometry, the preliminary member screen and the service displacement before saving this revision.
+
+00:00:09.567 --> 00:00:12.493
+Open a post at the right-hand bearing. The saved revision supplies simultaneous reactions for one truss at this node.
+
+00:00:12.493 --> 00:00:17.610
+Select the ultimate combination. Compare the concurrent head load with the base force after factoring the post self-weight. Negative axial force is uplift.
+
+00:00:17.610 --> 00:00:23.172
+For service, inspect the axial force and displacement along the post. Section resistance, lateral stability, bearings and hold-downs still need engineering review.
+
+00:00:23.172 --> 00:00:29.540
+Issue the post and the truss together in Project Summary. The report identifies both source revisions.

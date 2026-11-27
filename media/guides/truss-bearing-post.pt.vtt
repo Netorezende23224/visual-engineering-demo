@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.334 --> 00:00:01.472
+Crie um estudo de treliça de cobertura de duas águas. Defina o vão de 6 m e o espaçamento de 0,9 m.
+
+00:00:01.472 --> 00:00:04.698
+Selecione perfis SHS para banzos e diagonais. Use pressões de vento com sinal para a sucção e confira as ações permanentes e variáveis nos banzos.
+
+00:00:04.698 --> 00:00:09.567
+Calcule a treliça. Confira no desenho 2D a geometria, a verificação preliminar das barras e a flecha de serviço. Salve a revisão.
+
+00:00:09.567 --> 00:00:12.493
+Abra um pilar no apoio direito. A revisão salva fornece as reações simultâneas de uma treliça nesse nó.
+
+00:00:12.493 --> 00:00:17.610
+Selecione a combinação última. Compare a carga no topo com o esforço na base após aplicar o fator ao peso próprio do pilar. O sinal negativo indica tração.
+
+00:00:17.610 --> 00:00:23.172
+Em serviço, consulte o esforço axial e o deslocamento ao longo do pilar. Resistência do perfil, estabilidade lateral, apoios e ancoragens exigem revisão do engenheiro.
+
+00:00:23.172 --> 00:00:29.540
+Emita o pilar e a treliça juntos no Project Summary. O relatório identifica as revisões dos dois estudos.
