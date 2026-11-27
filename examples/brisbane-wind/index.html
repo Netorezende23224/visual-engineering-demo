@@ -5,8 +5,9 @@
 <div class="controls"><label>Map layer <select id="layer"><option value="streets">Street map</option><option value="cover">2021 land cover</option></select></label><label>Upwind sector <select id="direction"></select></label>
     <label>Pressure shown on map <select id="map-pressure-kind"><option value="q">ULS velocity pressure q (kPa)</option><option value="net">ULS net windward wall pressure (kPa)</option></select></label><label>Viewing radius <select id="radius"><option>350</option><option selected>700</option><option>1400</option></select> m</label></div>
 <label>Example terrain for selected direction <select id="example-tc"><option>1</option><option>2</option><option>2.5</option><option selected>3</option><option>4</option></select></label>
-<p>Worked example at 10 m height with a regional ULS speed of 57 m/s. Each direction starts at TC3. Change a sector to compare pressures. Other speed multipliers are 1.0 and the net windward pressure coefficient is +0.70. The engineer reviews mapped terrain before adopting it.</p>
-<figure><svg viewBox="-127 -127 254 254" role="img" aria-label="Site-centred map with eight true-north sectors and three distance bands"></svg>
+<label>Example topographic multiplier for selected direction <select id="example-mt"><option value="1">1.00</option><option value="1.1">1.10</option><option value="1.25">1.25</option></select></label>
+<p>Worked example at 10 m height with a regional ULS speed of 57 m/s. Each direction starts at TC3. Change a sector to compare pressures. The selected topographic multiplier starts at 1.00. Other speed multipliers are 1.0 and the net windward pressure coefficient is +0.70. The engineer reviews mapped terrain before adopting it.</p>
+<figure><div class="site-pressure-map"><svg viewBox="-127 -127 254 254" role="img" aria-label="Site-centred map with eight true-north sectors and three distance bands"></svg><div class="site-pressure" aria-live="polite"><span id="site-pressure-kind">Ultimate wind at site</span><strong id="site-pressure-value">Select a site and calculate the AS/NZS 1170.2 wind case.</strong></div></div>
 <figcaption><span id="status" role="status"></span> <a id="credit" href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></figcaption></figure>
 <section class="site-context" id="site-context" aria-labelledby="neighbourhood-heading">
 <section aria-labelledby="direction-heading"><h3 id="direction-heading">Ultimate wind pressure by approach direction</h3>
@@ -24,7 +25,7 @@
   </section>
   <section><h3>Ground profile through the site</h3><p role="status" id="elevation-state"></p>
     <svg viewBox="0 0 500 190" id="ground-profile" role="img" aria-label="Elevation along the selected wind direction"></svg>
-    <p id="slope-result"></p>
+    <p id="slope-result"></p><p id="slope-pressure"></p><p>Review the upwind slope, ridge shape and distance to the crest before adopting a topographic multiplier. The elevation difference alone does not establish a pressure reduction at the building.</p>
   </section>
 </div>
 <details><summary>Survey basis and interpretation</summary>

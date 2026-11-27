@@ -10,3 +10,8 @@
 .direction-scroll{overflow-x:auto}
 .direction-scroll table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 .direction-scroll td,.direction-scroll th{padding:.4em;text-align:left;border-bottom:1px solid #c6d4d8}
+
+.site-pressure-map{position:relative;min-width:0}
+.site-pressure{position:absolute;left:.35rem;bottom:.35rem;max-width:70%;padding:.3rem .55rem;background:#102e43;color:white;border:1px solid white;border-radius:.25rem;line-height:1.2;pointer-events:none}
+.site-pressure span,.site-pressure strong{display:block}
+.site-pressure span{font-size:.75rem}.site-pressure strong{font-size:1.05rem}

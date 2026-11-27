@@ -14,6 +14,13 @@
   }
   const boundMaps=new WeakSet();
   function selectAt(event){
+    const badge=event.target.closest('[data-bearing]');
+    if(badge){
+      const control=el('map-direction')||el('direction');
+      control.value=badge.getAttribute('data-bearing');
+      control.dispatchEvent(new Event('change'));
+      return;
+    }
     if(!buildingData)return;
     const transform=map.getScreenCTM();if(!transform)return;
     const p=new DOMPoint(event.clientX,event.clientY).matrixTransform(transform.inverse());
@@ -59,18 +66,27 @@
     const labels=svg('g',{'data-terrain-labels':'','pointer-events':'none'});
     const table=el('direction-results');
     table.replaceChildren();
+    const netSelected=el('map-pressure-kind').value==='net', current=pressures[dir];
+    const pressure=current?.[netSelected?'net':'q'];
+    el('site-pressure-kind').textContent=dir+' · ULS '+(netSelected?'net windward wall':'velocity pressure');
+    el('site-pressure-value').textContent=Number.isFinite(pressure)?pressure.toFixed(3)+' kPa':
+      site?'Pressure unavailable · review the AS/NZS 1170.2 wind inputs.':'Select a site to calculate wind pressure.';
+    el('slope-pressure').textContent=Number.isFinite(current?.neutralQ) ?
+      dir+' · ULS velocity pressure with Mt = 1.00: '+current.neutralQ.toFixed(3)+' kPa. With the selected Mt = '+
+      Number(current.mt).toFixed(2)+': '+current.q.toFixed(3)+' kPa. Other factors and the minimum design speed are held constant.':'';
     geo.dirs.forEach((name,i)=>{
       const bands=buildingData?[0,1,2].map(b=>geo.obstacleBand(buildingData,name,b,radius,allCover?.[name]?.[b] || (name===dir?cover?.[b]:null)).tc):[];
       const consistent=bands.length && bands.every(tc=>tc!==null && tc===bands[0]);
       const assessment=consistent?'TC'+bands[0]:bands.some(tc=>tc!==null)?'Mixed / review':'Unassessed';
       const angle=i*Math.PI/4,x=83*Math.sin(angle),y=-83*Math.cos(angle);
       const q=pressures[name]?.q, net=pressures[name]?.net, tc=adopted[name];
-      const netSelected=el('map-pressure-kind').value==='net';
       const pressure=netSelected?net:q;
       const badge=tc?'TC'+tc:consistent?assessment+'?':assessment==='Unassessed'?'TC ?':'Mixed TC';
-      labels.append(svg('rect',{x:x-18,y:y-7.5,width:36,height:15,rx:2,fill:name===dir?'#ffe2f0':'white','fill-opacity':.95}),
-        svg('text',{x,y:y-1,'font-size':5.4,'font-weight':700,'text-anchor':'middle',fill:'#253348'},badge),
-        svg('text',{x,y:y+5,'font-size':4.8,'text-anchor':'middle',fill:'#253348'},Number.isFinite(pressure)?pressure.toFixed(3)+' kPa':'unavailable'));
+      const group=svg('g',{'data-bearing':name,'pointer-events':'all',cursor:'pointer'});
+      group.append(svg('rect',{x:x-23,y:y-9,width:46,height:18,rx:2,fill:name===dir?'#ffe2f0':'white','fill-opacity':.95}),
+        svg('text',{'pointer-events':'none',x,y:y-2,'font-size':5.4,'font-weight':700,'text-anchor':'middle',fill:'#253348'},badge),
+        svg('text',{'pointer-events':'none',x,y:y+6.2,'font-size':6.3,'font-weight':700,'text-anchor':'middle',fill:'#253348'},Number.isFinite(pressure)?pressure.toFixed(3)+' kPa':'unavailable'));
+      labels.append(group);
       const row=table.insertRow();
       for(const value of [name,assessment,tc?'TC'+tc:'—',Number.isFinite(q)?q.toFixed(3):'—',Number.isFinite(net)?net.toFixed(3):'—']){
         row.insertCell().textContent=value;

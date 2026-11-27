@@ -27,6 +27,8 @@
   function polar(a,r) {return [Math.sin(a/degrees)*r,-Math.cos(a/degrees)*r];}
   const exampleTerrain=Object.fromEntries(dirs.map(d=>[d,'3']));
   const multiplier={'1':1.08,'2':1,'2.5':.92,'3':.83,'4':.75};
+  const exampleMt=Object.fromEntries(dirs.map(d=>[d,1]));
+  field('example-mt').onchange=()=>{exampleMt[field('direction').value]=Number(field('example-mt').value);overlay();};
   field('example-tc').onchange=()=>{exampleTerrain[field('direction').value]=field('example-tc').value;overlay();};
   function overlay() {
     svg.querySelectorAll('[data-overlay]').forEach(e=>e.remove());
@@ -60,10 +62,12 @@
       return entry ? {cover:entry[0],percent:100*entry[1]/Object.values(band).reduce((a,b)=>a+b,0)} : null;
     })]));
     field('example-tc').value=exampleTerrain[field('direction').value];
+    field('example-mt').value=String(exampleMt[field('direction').value]);
     const values={};
     for(const d of dirs){
-      const speed=Math.max(30,57*multiplier[exampleTerrain[d]]), q=.0006*speed**2;
-      values[d]={q,net:q*.7};
+      const reference=57*multiplier[exampleTerrain[d]], mt=exampleMt[d];
+      const q=.0006*Math.max(30,reference*mt)**2;
+      values[d]={q,net:q*.7,mt,neutralQ:.0006*Math.max(30,reference)**2};
     }
     window.VESiteSurvey.show({lat,lon,label:siteLabel},radius,field('direction').value,svg,sectorCover[field('direction').value],values,exampleTerrain,sectorCover);
     field('sector').textContent=field('direction').value+' · upwind bands';
