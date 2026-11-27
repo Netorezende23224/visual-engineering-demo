@@ -21,6 +21,8 @@ Explore the [Visual Engineering product site](https://netorezende23224.github.io
 
 The browser viewer displays 122 members exported from a worked desktop example. Its camera and visibility controls let you inspect that geometry. The calculations and fixing detail shown in the walkthrough belong to the recorded sample.
 
+Every tool guide includes a recorded example with English captions. The residential example follows beam B01 over a 4.00 m opening from its two post bearings to the section recommendation. The [structural report and beam dossier](https://netorezende23224.github.io/visual-engineering-demo/reports/residential-opening/) can be read in the browser.
+
 ## Subscriptions
 
 The Visual Engineering demos run in the browser on a phone or computer. Subscriptions for the private online workspace will open at launch. Prices are in Australian dollars.

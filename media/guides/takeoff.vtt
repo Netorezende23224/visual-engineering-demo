@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.442
+Drawing Takeoff  ·  Worked example
+
+00:00:00.442 --> 00:00:02.600
+A-01 · Locate the 4 m opening between the kitchen and living room on the calibrated plan.
+
+00:00:02.600 --> 00:00:05.997
+Choose Steel → Post. Place a post at each jamb of the opening.
+
+00:00:05.997 --> 00:00:12.263
+Choose Beam and snap its two ends to posts P01 and P02.
+
+00:00:12.263 --> 00:00:15.200
+Set Floor only with a 2.0 kPa imposed load. Change the first contributing span to 2 m.
+
+00:00:15.200 --> 00:00:18.328
+Use recommended sizing, restrict the section family to PFC, then apply the changes.
+
+00:00:18.328 --> 00:00:23.953
+Calculate the project to update the section, span and reactions to both posts.
+
+00:00:23.953 --> 00:00:27.214
+B01 · 125 PFC over 4.00 m. The plan shows dead and live reactions at both posts.
+
+00:00:27.214 --> 00:00:30.709
+Sizing screens deflection. The engineer must still verify strength, stability, connections and supports.

@@ -264,3 +264,11 @@ h1, h2, h3 { font-weight: 600; }
 .guide-cases dd {margin:.25rem 0 1rem;color:var(--muted)}
 .guide-cases dd:last-child {margin-bottom:0}
 .acquisition h3 {margin:1rem 0 .45rem}
+
+.tutorials { grid-column: 1 / -1; min-width: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+.tutorials > h3 { grid-column: 1 / -1; margin: 1rem 0 0; }
+.tutorial { scroll-margin-top: 5rem; align-self: start; }
+.guide-media.tutorial figcaption { display: block; padding: 1rem; }
+.tutorial h4 { margin: 0 0 .35rem; font-size: 1.1rem; }
+.tutorial figcaption p { margin: 0; font-size: .92rem; }
+.guide-media.tutorial video { display: block; aspect-ratio: 1360 / 860; }

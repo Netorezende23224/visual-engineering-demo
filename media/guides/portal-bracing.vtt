@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.424
+Portal Bracing  ·  Worked example
+
+00:00:00.424 --> 00:00:04.745
+Open the residential bracing layout. PF01 spans the opening; BR01 and BR02 are separate strap panels.
+
+00:00:04.745 --> 00:00:09.281
+Review the portal base and lateral action for the Ground floor X direction.
+
+00:00:09.281 --> 00:00:13.775
+Apply the floor wind inputs. Pressure × exposed length × height gives demand in kN.
+
+00:00:13.775 --> 00:00:17.131
+Wind X demand: 10.80 kN. Preliminary portal: 31.48 kN. Both strap panels together: 11.52 kN.
+
+00:00:17.131 --> 00:00:20.704
+BR01 contributes 5.94 kN and BR02 contributes 5.58 kN horizontally under the entered section and screw assumptions.

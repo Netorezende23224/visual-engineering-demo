@@ -5,7 +5,7 @@
   const part = document.querySelector('#lintel-part'), angle = document.querySelector('#lintel-angle');
   const label = document.querySelector('#lintel-readout'), cover = document.querySelector('#lintel-cover');
   const cache = new Map();
-  const names = {webs:'C90 · 6 webs',faces:'2 plates · 6 webs','no-webs':'2 plates · 0 webs',timber:'Solid timber · 90 × 300 mm'};
+  const names = {webs:'C90 · 5 diagonal webs + 2 end posts',opaque:'2 full-length opaque face plates',faces:'2 full-length translucent face plates · 5 diagonal webs + 2 end posts','no-webs':'2 plates · 0 webs',timber:'Solid timber · 90 × 300 mm'};
   function draw() {
     const img = cache.get(part.value);
     if (!img?.complete || !img.naturalWidth) return;

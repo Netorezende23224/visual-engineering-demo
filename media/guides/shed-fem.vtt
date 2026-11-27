@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.450
+Shed Fem  ·  Worked example
+
+00:00:00.450 --> 00:00:03.039
+Open the project-linked FEM study and select the entire shed.
+
+00:00:03.039 --> 00:00:33.088
+Run the analysis for the linked project and select the ultimate gravity plus wind case.
+
+00:00:33.088 --> 00:00:39.441
+Inspect the original and displaced frames and read the peak displacement in mm.
+
+00:00:39.441 --> 00:00:42.824
+Inspect the Y component at 25× display scale. The solver reports physical displacements in millimetres.

@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.481
+Finite element analysis  ·  Worked example
+
+00:00:00.481 --> 00:00:04.448
+Choose a rectangular plate and review its dimensions and edge restraints.
+
+00:00:04.448 --> 00:00:07.961
+Calculate the mesh and inspect the service displacement field.
+
+00:00:07.961 --> 00:00:11.200
+Compare the ultimate load case with the service case.

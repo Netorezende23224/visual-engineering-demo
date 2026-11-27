@@ -6,11 +6,12 @@
   const viewer = document.querySelector('[data-shed-viewer]');
 
   function showGuide(index) {
-    if (panels[0] && index !== 0) video.pause();
+
     tabs.forEach((tab, i) => {
       const active = i === index;
       tab.setAttribute('aria-selected', String(active));
       tab.tabIndex = active ? 0 : -1;
+      if (!active) panels[i].querySelectorAll('video').forEach(film => film.pause());
       panels[i].hidden = !active;
     });
   }
@@ -23,8 +24,12 @@
   }
 
   function followFragment() {
-    const index = tabs.findIndex(tab => tab.hash === location.hash);
-    if (index !== -1) showGuide(index);
+    const target = document.getElementById(location.hash.slice(1));
+    if (!target) return;
+    const index = panels.indexOf(target.closest('[data-guide-panel]'));
+    if (index === -1) return;
+    showGuide(index);
+    if (target !== panels[index]) target.scrollIntoView({block: 'start'});
   }
 
   nav.setAttribute('role', 'tablist');

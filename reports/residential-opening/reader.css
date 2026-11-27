@@ -1,0 +1,11 @@
+.report { max-width: 76rem; margin: 0 auto; padding: 1.25rem; color: #173244; }
+.report h1 { margin: 1.2rem 0 .5rem; font-size: clamp(2rem,5vw,3.8rem); }
+.report header p {max-width: 68ch;}
+.report nav,.controls { display:flex; flex-wrap:wrap; align-items:center; gap:.85rem; margin:1.1rem 0; }
+.report nav a { text-decoration: underline; }
+.controls button,.controls select { padding:.5rem .7rem; font:inherit; }
+#position { font-weight:600; }
+#paper { overflow:auto; border:1px solid #c5d1d5; }
+#scan { display:block; width:100%; height:auto; max-width:none; }
+#paper.enlarged img { width:max(100%,1600px); }
+.report details {margin:1rem 0;} .report pre {white-space:pre-wrap; overflow-wrap:anywhere;}

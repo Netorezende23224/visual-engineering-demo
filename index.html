@@ -84,7 +84,7 @@
     <section class="guides wrap" id="guides" aria-labelledby="guides-title">
       <div class="section-intro" id="tools">
         <h2 id="guides-title">Tool guides</h2>
-        <p>Choose one of the 12 tools to explore a worked example in your browser.</p>
+        <p>Select a tool to explore its example and watch a recorded walkthrough. The videos show the engineering workspaces. You can try the limited interactive demos here.</p>
       </div>
       <nav class="guide-nav" aria-label="Choose a tool guide" data-guide-nav>
         <a id="tab-guide-shed" href="#guide-shed">Shed 3D</a>
@@ -140,6 +140,22 @@
           <img data-wind-image="wall" src="media/wall-pressures.png" width="1188" height="586" loading="lazy" alt="WindLab wall elevation with pressure zones for wind from the west.">
           <figcaption><span>WindLab output</span><span>West wind · Region B1</span></figcaption>
         </figure>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-windlab" class="guide-media tutorial">
+            <figcaption><h4>Compare roof and wall pressures</h4><p>Change the building width and compare ultimate roof pressures with the service wall elevation.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/windlab.jpg" aria-label="Compare roof and wall pressures">
+              <source src="media/guides/windlab.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/windlab.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+          <figure id="watch-portal-bracing" class="guide-media tutorial">
+            <figcaption><h4>Compare portal and strap resistance to wind</h4><p>For 10.80 kN of service wind demand in X, the preliminary portal contribution is 31.48 kN. The two 50 × 1 mm strap panels contribute 5.94 kN and 5.58 kN horizontally under the entered screw and section assumptions. Anchorage and complete assembly resistance require separate verification.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/portal-bracing.jpg" aria-label="Compare portal and strap resistance to wind">
+              <source src="media/guides/portal-bracing.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/portal-bracing.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
 
       <article id="takeoff" class="guide-panel" data-guide-panel aria-labelledby="takeoff-guide-heading">
@@ -156,29 +172,62 @@
           <img src="media/takeoff-example.webp" alt="CB5 in the Drawing Takeoff example, spanning four metres between its supports." loading="lazy">
           <figcaption><span>Drawing Takeoff example</span><span>CB5 · 4.00 m</span></figcaption>
         </figure>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-takeoff" class="guide-media tutorial">
+            <figcaption><h4>Size a PFC over a residential opening</h4><p>Place two posts at the jambs, snap the beam to them, set a 2.0 kPa floor live load and change the contributing span. The preliminary deflection screen selects 125 PFC across 4.00 m. The strength and connection checks still require engineering review.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/takeoff.jpg" aria-label="Size a PFC over a residential opening">
+              <source src="media/guides/takeoff.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/takeoff.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="lintel-3d" class="guide-panel" data-guide-panel aria-labelledby="lintel-heading">
         <div class="guide-text">
           <h3 id="lintel-heading">Look inside a lintel</h3>
-          <p>Rotate a 2.50 m example. The steel frame has C90 chords, six vertical webs and two 1.15 mm face plates. Compare it with the same frame without webs or a solid 90 × 300 mm timber member.</p>
+          <p>Rotate a 2.50 m example. The steel frame has C90 chords, five alternating diagonal webs between the chords, two end posts and two 1.15 mm face plates. The full-length plates are translucent in the inspection view so the diagonal webs remain visible. Rotate the example, then compare steel without webs and solid 90 × 300 mm timber.</p>
           <p>The limited demo uses fixed geometry. The calculator in development lets the engineer change the section, loads and restraints.</p>
         </div>
         <figure class="guide-media lintel-demo">
           <div class="lintel-options" hidden>
-            <label>View <select id="lintel-part"><option value="webs">Steel · frame with webs</option><option value="faces">Steel · webs and face plates</option><option value="no-webs">Steel · face plates without webs</option><option value="timber">Solid timber</option></select></label>
+            <label>View <select id="lintel-part"><option value="faces">Steel · full-length translucent plates and diagonal webs</option><option value="opaque">Steel · full-length opaque plates</option><option value="webs">Steel · diagonal web frame</option><option value="no-webs">Steel · face plates without webs</option><option value="timber">Solid timber</option></select></label>
             <label>Rotation <input id="lintel-angle" aria-label="Rotate lintel" type="range" min="0" max="23" step="1" value="0"></label>
           </div>
-          <img id="lintel-cover" src="media/lintel-webs.webp" width="720" height="210" loading="lazy" alt="Steel lintel with both face plates removed to show the six internal and end webs.">
+          <img id="lintel-cover" src="media/lintel-webs.webp" width="720" height="210" loading="lazy" alt="Full-length translucent face plates reveal five diagonal web members between the top and bottom chords and posts at both ends.">
           <canvas id="lintel-preview" width="720" height="210" hidden aria-label="Rotatable fixed lintel example"></canvas>
-          <figcaption><span>Lintel 3D · fixed example</span><span id="lintel-readout" aria-live="polite">C90 · 6 webs</span></figcaption>
+          <figcaption><span>Lintel 3D · fixed example</span><span id="lintel-readout" aria-live="polite">C90 · 5 diagonal webs + 2 end posts</span></figcaption>
         </figure>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-lintel-3d" class="guide-media tutorial">
+            <figcaption><h4>Inspect diagonal webs behind the face plates</h4><p>Rotate the assembly to trace five diagonals through the translucent plates, then switch to opaque plates to inspect full coverage. Compare it with the steel assembly without webs and with the solid timber member.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/lintel-3d.jpg" aria-label="Inspect diagonal webs behind the face plates">
+              <source src="media/guides/lintel-3d.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/lintel-3d.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="project-summary" class="guide-panel" data-guide-panel aria-labelledby="project-summary-heading">
         <div class="guide-text">
           <h3 id="project-summary-heading">Compare the steel allowance for a lintel</h3>
-          <p>A 2.50 m trial lintel, C90 frame and two 300 × 1.15 mm face plates.</p>
+          <p>Quantity comparison for a separate 2.50 m C90 lintel with vertical studs and two 300 × 1.15 mm face plates.</p>
         </div>
-        <dl class="guide-cases"><dt>With 6 webs</dt><dd>Frame and plates weigh 21.15 kg.</dd><dt>Without webs</dt><dd>Removing all six vertical members reduces the allowance to 19.13 kg.</dd></dl>
+        <dl class="guide-cases"><dt>With 6 vertical webs</dt><dd>Frame and plates weigh 21.15 kg.</dd><dt>Without webs</dt><dd>Removing all six vertical members reduces the allowance to 19.13 kg.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-project-summary" class="guide-media tutorial">
+            <figcaption><h4>Review a project revision</h4><p>Enter the revision, calculate the marked project and inspect the member tables and outstanding checks.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/project-summary.jpg" aria-label="Review a project revision">
+              <source src="media/guides/project-summary.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/project-summary.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+          <figure id="watch-project-report" class="guide-media tutorial">
+            <figcaption><h4>Read the complete structural report</h4><p>Open the 23-page structural pack for the residential opening. Follow a post reaction into the worked equations, then inspect the 9-page B01 beam dossier for the loads, diagrams and checks.</p><a href="reports/residential-opening/">Read all 32 pages in your browser</a></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/project-report.jpg" aria-label="Read the complete structural report">
+              <source src="media/guides/project-report.mp4" type="video/mp4"><track kind="captions" src="media/guides/project-report.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="foundation-soil" class="guide-panel" data-guide-panel aria-labelledby="foundation-soil-heading">
         <div class="guide-text">
@@ -186,6 +235,15 @@
           <p>Centred strip footing, 0.60 m wide, concrete depth 0.30 m and unit weight 24 kN/m³. Service contact pressure only.</p>
         </div>
         <dl class="guide-cases"><dt>30 kN/m line load</dt><dd>Calculated contact pressure 57.2 kPa.</dd><dt>60 kN/m line load</dt><dd>Calculated contact pressure 107.2 kPa.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-foundation-soil" class="guide-media tutorial">
+            <figcaption><h4>Inspect a slab and strip footing assembly</h4><p>Compare the 3D assembly and plan, open the soil assumptions and locate the checks for the supported panels.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/foundation-soil.jpg" aria-label="Inspect a slab and strip footing assembly">
+              <source src="media/guides/foundation-soil.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/foundation-soil.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="calculators" class="guide-panel" data-guide-panel aria-labelledby="calculators-heading">
         <div class="guide-text">
@@ -193,6 +251,15 @@
           <p>Slab worksheet with concrete at 24 kN/m³ and imposed load of 2 kPa.</p>
         </div>
         <dl class="guide-cases"><dt>150 mm slab</dt><dd>Dead load 3.60 kPa. Service G + Q is 5.60 kPa.</dd><dt>180 mm slab</dt><dd>Dead load 4.32 kPa. Service G + Q is 6.32 kPa.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-calculators" class="guide-media tutorial">
+            <figcaption><h4>Change the inputs in the Simple Beam worksheet</h4><p>Choose the PFC family, enter the bearing span and update the calculation sheet.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/calculators.jpg" aria-label="Change the inputs in the Simple Beam worksheet">
+              <source src="media/guides/calculators.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/calculators.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="truss-designer" class="guide-panel" data-guide-panel aria-labelledby="truss-designer-heading">
         <div class="guide-text">
@@ -200,6 +267,15 @@
           <p>Gable truss using the default desktop sections and a 1 m target panel length.</p>
         </div>
         <dl class="guide-cases"><dt>4 m span</dt><dd>17 model members with 16.01 m total member length.</dd><dt>6 m span</dt><dd>25 model members with 25.99 m total member length.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-truss-designer" class="guide-media tutorial">
+            <figcaption><h4>Check an 8 m gable truss in 2D</h4><p>Set the roof pitch to 22°, inspect the chord loads and run the model. The preliminary screen reports 33.7% member utilisation and 4.83 mm service deflection against a 15.00 mm limit.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/truss-designer.jpg" aria-label="Check an 8 m gable truss in 2D">
+              <source src="media/guides/truss-designer.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/truss-designer.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="beam-analysis" class="guide-panel" data-guide-panel aria-labelledby="beam-analysis-heading">
         <div class="guide-text">
@@ -207,6 +283,15 @@
           <p>Simply supported beam with a uniform line load of 6 kN/m.</p>
         </div>
         <dl class="guide-cases"><dt>4 m span</dt><dd>Peak moment 12 kN·m. Each bearing carries 12 kN.</dd><dt>6 m span</dt><dd>Peak moment 27 kN·m. Each bearing carries 18 kN.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-beam-analysis" class="guide-media tutorial">
+            <figcaption><h4>Read beam actions at a selected station</h4><p>Recalculate the residential beam and select a station on its action diagram to inspect the response.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/beam-analysis.jpg" aria-label="Read beam actions at a selected station">
+              <source src="media/guides/beam-analysis.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/beam-analysis.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="fem" class="guide-panel" data-guide-panel aria-labelledby="fem-heading">
         <div class="guide-text">
@@ -214,6 +299,22 @@
           <p>6 m beam, 300 × 500 mm section, E = 30 GPa, service load 10 kN/m, 12 elements.</p>
         </div>
         <dl class="guide-cases"><dt>Simple supports</dt><dd>Peak service deflection 1.800 mm.</dd><dt>Fixed ends</dt><dd>Peak service deflection 0.360 mm.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-fem" class="guide-media tutorial">
+            <figcaption><h4>Read a plate displacement field</h4><p>Choose the plate and restraints, run the mesh and compare service and ultimate results in the spatial view.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/fem.jpg" aria-label="Read a plate displacement field">
+              <source src="media/guides/fem.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/fem.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+          <figure id="watch-shed-fem" class="guide-media tutorial">
+            <figcaption><h4>Run FEM on a marked shed</h4><p>Run the linked model for the rolled-column shed and select ULS 1.2G + W. The largest sampled displacement magnitude in this example is 18.78 mm at SH-003. Switch components to locate their separate peaks.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/shed-fem.jpg" aria-label="Run FEM on a marked shed">
+              <source src="media/guides/shed-fem.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/shed-fem.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="posts-walls" class="guide-panel" data-guide-panel aria-labelledby="posts-walls-heading">
         <div class="guide-text">
@@ -221,6 +322,15 @@
           <p>Ideal lipped C90 stud section with 40 mm flanges and 10 mm returns.</p>
         </div>
         <dl class="guide-cases"><dt>0.75 mm BMT</dt><dd>Gross section area 142.5 mm². Steel mass 1.119 kg/m.</dd><dt>0.95 mm BMT</dt><dd>Gross section area 180.5 mm². Steel mass 1.417 kg/m.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-posts-walls" class="guide-media tutorial">
+            <figcaption><h4>Check a loaded C90 stud wall</h4><p>Open wall W01, edit the direct permanent load, save the inputs and run its axial member check.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/posts-walls.jpg" aria-label="Check a loaded C90 stud wall">
+              <source src="media/guides/posts-walls.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/posts-walls.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <article id="steel-connections" class="guide-panel" data-guide-panel aria-labelledby="steel-connections-heading">
         <div class="guide-text">
@@ -228,6 +338,22 @@
           <p>Block shear benchmark. Net shear area 720 mm², net tension area 1,200 mm², gross shear area 1,050 mm², Fu 440 MPa, Fy 320 MPa and kbs = 1.</p>
         </div>
         <dl class="guide-cases"><dt>Nominal resistance</dt><dd>Fracture 718.08 kN and gross shear mechanism 729.60 kN. The smaller value governs.</dd><dt>Design resistance</dt><dd>Component result 538.56 kN with the benchmark factor of 0.75. The complete connection still requires review.</dd></dl>
+        <section class="tutorials" aria-label="Recorded tutorials"><h3>Watch the workflow</h3>
+          <figure id="watch-steel-connections" class="guide-media tutorial">
+            <figcaption><h4>Inspect a beam-to-post cleat in 3D</h4><p>Switch from the 3D bolt group to the dimensioned drawing and open the calculation register.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/steel-connections.jpg" aria-label="Inspect a beam-to-post cleat in 3D">
+              <source src="media/guides/steel-connections.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/steel-connections.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+          <figure id="watch-connection-design" class="guide-media tutorial">
+            <figcaption><h4>Size and verify a double-angle connection</h4><p>Size a double-angle connection for a 35 kN ultimate shear. The search selected EA 90×90×6. Seven scoped checks were calculated with zero failures. The register identifies 13 incomplete checks.</p></figcaption>
+            <video controls playsinline preload="none" poster="media/guides/connection-design.jpg" aria-label="Size and verify a double-angle connection">
+              <source src="media/guides/connection-design.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/connection-design.vtt" srclang="en" label="English">
+            </video>
+          </figure>
+        </section>
       </article>
       <p class="example-note">These worked examples illustrate the software. The responsible engineer must verify site inputs, restraints and calculation results and decide whether to approve the design.</p>
     </section>
