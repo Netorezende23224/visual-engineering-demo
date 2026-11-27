@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.443 --> 00:00:01.476
+Create a gable roof truss study. Set the span to 6 m and the tributary spacing to 0.9 m.
+
+00:00:01.476 --> 00:00:04.814
+Select SHS chords and webs. Use signed wind pressures for uplift and review the permanent and imposed actions on the chords.
+
+00:00:04.814 --> 00:00:09.818
+Calculate the truss. Review the 2D geometry, the preliminary member screen and the service displacement before saving this revision.
+
+00:00:09.818 --> 00:00:13.736
+Issue the saved revision in Project Summary. The report records the SHS sections, service displacement and governing member status.
+
+00:00:13.736 --> 00:00:22.868
+Read the calculation appendix. Check the inputs and geometry, then follow the horizontal and vertical bearing reactions by load combination.
+
+00:00:22.868 --> 00:00:27.669
+Check the member envelopes and the proposed joint details. The responsible engineer reviews the bracing, bearings and connections before approval.

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.746 --> 00:00:01.699
+Calibrate a floor plan with a 10 m reference. Select the perimeter of the 5 m by 4 m room.
+
+00:00:01.699 --> 00:00:05.040
+Mark the 5 m distance between bearings separately. Save the page to fix the area and span to this drawing revision.
+
+00:00:05.040 --> 00:00:11.428
+Select the area and bearing span that belong together. Open the truss study and review both measurements and their source revision.
+
+00:00:11.428 --> 00:00:16.349
+Choose the floor action rows and SHS members, then calculate the adopted geometry. The engineer supplies the loads and support conditions.
+
+00:00:16.349 --> 00:00:21.022
+Issue the saved truss. Project Summary puts the measured area, span, marks and drawing revision beside the adopted geometry and calculated values.
+
+00:00:21.022 --> 00:00:25.414
+Open the issued calculation in the browser. The dated report retains the source even when the drawing or the truss changes later.

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.746 --> 00:00:01.699
+Calibre a planta com a referência de 10 m. Marque o contorno do ambiente de 5 m por 4 m.
+
+00:00:01.699 --> 00:00:05.040
+Marque separadamente os 5 m entre os apoios. Salve a página para vincular a área e o vão à revisão da prancha.
+
+00:00:05.040 --> 00:00:11.428
+Selecione a área e o vão que correspondem à mesma treliça. Abra o estudo para conferir as duas medidas e a revisão da prancha.
+
+00:00:11.428 --> 00:00:16.349
+Escolha as cargas de piso e os perfis SHS. Calcule a geometria adotada. Cabe ao engenheiro definir as cargas e os vínculos.
+
+00:00:16.349 --> 00:00:21.022
+Emita a treliça salva. O Project Summary registra área, vão, marcas e revisão da prancha junto da geometria adotada e dos resultados.
+
+00:00:21.022 --> 00:00:25.414
+Abra a memória no navegador. A emissão mantém a origem das marcas mesmo quando a prancha ou a treliça muda depois.
