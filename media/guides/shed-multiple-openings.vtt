@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.146 --> 00:00:01.073
+Save a 10 × 13 m workshop with east wind. In the first end-wall bay, apply a two-metre square door.
+
+00:00:01.073 --> 00:00:04.817
+Keep door D1. Add window W1 in the second south wall bay, with a 0.80 m sill and a 2.00 × 1.20 m clear opening.
+
+00:00:04.817 --> 00:00:09.412
+Isolate both opening frames. Next nominate D1 for the individual portal analysis, with W1 closed.
+
+00:00:09.412 --> 00:00:15.215
+Review a separate pair of coefficients for both leaves open together: +0.80 and −0.60. Calculate the project.
+
+00:00:15.215 --> 00:00:21.380
+At negative Cpi the east wall retains 40.408 m² and the south wall 49.600 m². Inspect inward field pressure and force on each remaining face.
+
+00:00:21.380 --> 00:00:38.041
+The four wall forces sum to −46.166 kN along Z at ultimate and −22.621 kN in service. Roof loads and reactions are outside this wall calculation.
+
+00:00:38.041 --> 00:00:43.468
+Read the report in the project. Reopen the saved schedule and verify both marks and the group coefficients.
