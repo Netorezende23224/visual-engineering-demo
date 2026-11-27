@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.151 --> 00:00:01.233
+Create a private finite element study. Select a rectangular beam and enter the 6 m span, 300 mm width and 500 mm depth.
+
+00:00:01.233 --> 00:00:07.715
+Adopt pin and roller supports and enter the total line loads. This example uses 10 kN/m at service and 15 kN/m at ultimate.
+
+00:00:07.715 --> 00:00:13.184
+Calculate the elastic response. The peak service displacement is 1.800 mm. The responsible engineer reviews the stiffness, supports and member strength.
+
+00:00:13.184 --> 00:00:18.328
+Select the saved FEM revision in Project Summary. Each issued copy includes the displacement for each case and the native calculation appendix.
+
+00:00:18.328 --> 00:00:25.643
+Open the calculation appendix to read the supports, inputs and equations. Turn to the service result to inspect the displaced shape and force balance.

@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.151 --> 00:00:01.233
+Crie um estudo privado de elementos finitos. Selecione a viga de seção retangular e informe vão de 6 m, largura de 300 mm e altura de 500 mm.
+
+00:00:01.233 --> 00:00:07.715
+Adote apoios simples e informe as cargas lineares totais. Neste exemplo são 10 kN/m em serviço e 15 kN/m no estado limite último.
+
+00:00:07.715 --> 00:00:13.184
+Calcule a resposta elástica. A flecha máxima em serviço é 1,800 mm. Cabe ao engenheiro verificar a rigidez, os apoios e a resistência da viga.
+
+00:00:13.184 --> 00:00:18.328
+Selecione a revisão FEM salva no Project Summary. Cada emissão inclui as flechas por caso e o apêndice com a memória de cálculo.
+
+00:00:18.328 --> 00:00:25.643
+Abra a memória de cálculo para ver apoios, entradas e equações. Na página de serviço, confira a deformada e o equilíbrio de forças.
