@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#112437">
-  <title>Visual Engineering — Shed 3D and structural software for Windows</title>
+  <title>Visual Engineering — Structural engineering tools in your browser</title>
   <meta name="description" content="Explore an interactive steel shed, inspect a Top Hat roof connection and follow worked examples in Shed 3D, WindLab and Drawing Takeoff.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_AU">
   <meta property="og:title" content="Visual Engineering — Inside Shed 3D">
-  <meta property="og:description" content="Orbit a four-bay steel shed and see how the Windows application takes a member from the model to its fixing detail.">
+  <meta property="og:description" content="Explore Shed 3D on your phone or computer. Inspect a four-bay steel shed and follow a roof purlin to its fixing detail.">
   <meta property="og:image" content="https://netorezende23224.github.io/visual-engineering-demo/media/shed-3d-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,12 +40,12 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="platform"><span class="win-glyph" aria-hidden="true"></span>Structural software for Windows</p>
+          <p class="platform">Browser demo · Phone and computer</p>
           <h1 id="hero-title">Explore <span class="product-title">Shed <em>3D.</em></span></h1>
-          <p class="hero-lede">Orbit a four-bay steel frame, follow a roof purlin and inspect its fixing. Watch how the same example works in the desktop application.</p>
+          <p class="hero-lede">Orbit a four-bay steel frame, follow a roof purlin and inspect its fixing directly in your browser.</p>
           <div class="hero-actions">
-            <a class="btn btn-accent" href="#guide-shed" data-watch><span class="play-glyph" aria-hidden="true"></span>Watch the walkthrough</a>
-            <a class="hero-link" href="#shed-3d" data-explore>Try the model <span class="arrow diagonal" aria-hidden="true"></span></a>
+            <a class="btn btn-accent" href="#shed-3d" data-explore>Try the model <span class="arrow diagonal" aria-hidden="true"></span></a>
+            <a class="hero-link" href="#guide-shed" data-watch>Watch the walkthrough <span class="arrow diagonal" aria-hidden="true"></span></a>
           </div>
           <dl class="hero-specs" aria-label="Example shed dimensions">
             <div><dt>Span</dt><dd>10 <span>m</span></dd></div>
@@ -76,7 +76,7 @@
           <div class="bench-readout"><p data-shed-selection role="status">Four-bay portal frame · 122 members</p><button type="button" data-shed-pick="SH-027" data-live-controls>Inspect SH-027 <span class="arrow diagonal" aria-hidden="true"></span></button></div>
           <p class="bench-help" id="orbit-help" data-live-controls>Drag or use the arrow keys to rotate. Select a member to inspect it.</p>
           <p class="screen-reader" id="orbit-keys">Page Up and Page Down select the previous or next visible member. Press Home to reset the model.</p>
-          <p class="fallback-note" data-shed-fallback>Sample from the desktop application. <a href="#guide-shed">Watch the Shed 3D walkthrough</a>.</p>
+          <p class="fallback-note" data-shed-fallback>Four-bay shed example. <a href="#guide-shed">Watch the Shed 3D walkthrough</a>.</p>
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
     <section class="guides wrap" id="guides" aria-labelledby="guides-title">
       <div class="section-intro" id="tools">
         <h2 id="guides-title">Tool guides</h2>
-        <p>Choose one of the 12 tools to explore a fixed example from the Windows application.</p>
+        <p>Choose one of the 12 tools to explore a worked example in your browser.</p>
       </div>
       <nav class="guide-nav" aria-label="Choose a tool guide" data-guide-nav>
         <a id="tab-guide-shed" href="#guide-shed">Shed 3D</a>
@@ -115,9 +115,9 @@
           <video id="shed-film" controls playsinline preload="metadata" poster="media/shed-physical.webp" aria-label="Shed 3D desktop walkthrough">
             <source src="media/shed-walkthrough.mp4" type="video/mp4">
             <track kind="captions" src="media/shed-walkthrough.vtt" srclang="en" label="English">
-            <a href="media/shed-walkthrough.mp4">Download the Shed 3D walkthrough</a>
+            <a href="media/shed-walkthrough.mp4">Watch the Shed 3D walkthrough</a>
           </video>
-          <figcaption><span>Desktop walkthrough</span><a href="media/shed-walkthrough.mp4" download>Download video <span class="arrow down" aria-hidden="true"></span></a></figcaption>
+          <figcaption>Recorded walkthrough of the example shed.</figcaption>
         </figure>
       </article>
 
@@ -235,12 +235,12 @@
 
     <section class="subscriptions" id="subscriptions" aria-labelledby="pricing-heading">
       <div class="wrap">
-        <div class="section-intro pricing-intro"><h2 id="pricing-heading">Subscriptions</h2><p>Each subscription renews monthly in Australian dollars. Checkout is hosted by Stripe.</p></div>
+        <div class="section-intro pricing-intro"><h2 id="pricing-heading">Subscriptions</h2><p>Monthly prices in Australian dollars.</p></div>
         <div class="offers">
           <article class="offer primary-offer">
             <div class="offer-heading"><span class="brand-mark small" aria-hidden="true"><i></i></span><h3>Visual Engineering</h3></div>
-            <p>Windows WindLab evaluation for one engineering practice. The browser demo is free. Private browser projects are in development.</p>
-            <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-dark" href="https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01" aria-label="Subscribe to Visual Engineering for Windows for A$100 per month">Subscribe for Windows <span class="arrow diagonal" aria-hidden="true"></span></a></div>
+            <p>Try the free browser demo on your phone or computer. The subscription for private online projects will open when the workspace launches.</p>
+            <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-dark" href="#shed-3d">Open the browser demo <span class="arrow diagonal" aria-hidden="true"></span></a></div>
           </article>
           <article class="offer companion-offer">
             <div class="offer-heading"><span class="pdf-glyph" aria-hidden="true">PDF</span><h3>OzziPDF</h3></div>

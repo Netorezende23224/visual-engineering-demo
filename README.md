@@ -23,15 +23,15 @@ The browser viewer displays 122 members exported from a worked desktop example. 
 
 ## Subscriptions
 
-Both checkouts renew monthly in Australian dollars. The Visual Engineering subscription covers the WindLab evaluation workflow for one engineering practice.
+The Visual Engineering demos run in the browser on a phone or computer. Subscriptions for the private online workspace will open at launch. Prices are in Australian dollars.
 
-| Product | Monthly price | Checkout |
+| Product | Monthly price | Access |
 | --- | --- | --- |
-| Visual Engineering | A$100 | [Subscribe to Visual Engineering](https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01) |
+| Visual Engineering | A$100 | [Open the free browser demo](https://netorezende23224.github.io/visual-engineering-demo/#shed-3d) |
 | OzziPDF | A$100 | [Subscribe to OzziPDF](https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03) |
 
 The asking price for an exclusive acquisition of the Visual Engineering source and transferable rights is A$250,000. [Enquire about the package and handover](https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry).
 
 ## Preview locally
 
-Run `python -m http.server 4173` in this directory and open `http://localhost:4173/`. Geometry, films, reports and fonts load from the site itself. The checkout links open Stripe. Font licences are included in [media/fonts](media/fonts).
+Run `python -m http.server 4173` in this directory and open `http://localhost:4173/`. Geometry, films, reports and fonts load from the site itself. OzziPDF checkout opens on Stripe. Font licences are included in [media/fonts](media/fonts).
