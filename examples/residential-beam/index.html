@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Size a channel over a residential opening · Visual Engineering</title>
+  <link rel="stylesheet" href="../residential-bracing/plan.css">
+  <link rel="stylesheet" href="beam.css">
+</head>
+<body><main>
+  <a href="../../#watch-takeoff-web-beam">← Watch the Drawing Takeoff walkthrough</a>
+  <h1>A beam over a residential opening</h1>
+  <p>Two posts support a 4.00 m channel between the kitchen and living room. Compare two floor widths carried by the same span. Both examples use 0.60 kPa permanent load and 1.50 kPa imposed load. The calculation includes the selected steel section’s self-weight.</p>
+  <figure>
+    <svg viewBox="0 0 600 420" role="img" aria-label="Residential ground floor with a beam between two marked jamb posts at the living room opening">
+      <image href="../residential-bracing/ground-floor.webp" width="600" height="420"/>
+      <path d="M195 199H395" stroke="#007798" stroke-width="5"/>
+      <g fill="#d96612" stroke="#fff"><rect x="190" y="194" width="10" height="10"/><rect x="390" y="194" width="10" height="10"/></g>
+    </svg>
+    <figcaption>Plan A-01 · The blue line marks the beam. Orange squares mark the two pinned end bearings.</figcaption>
+  </figure>
+  <h2>Compare the PFC sections</h2>
+  <table>
+    <caption>Gravity screening results for the two tributary widths</caption>
+    <thead><tr><th>Width</th><th>Section</th><th>Ultimate moment</th><th>Service deflection</th></tr></thead>
+    <tbody><tr><th>3 m</th><td>150 PFC</td><td>18.24 kNm</td><td>10.24 mm</td></tr>
+    <tr><th>6 m</th><td>180 PFC</td><td>36.13 kNm</td><td>11.94 mm</td></tr></tbody>
+  </table>
+  <p>The trial section must carry the gravity design moment and keep service deflection within 15 mm. The engineer still verifies member stability, shear resistance, local bearing, connections and project-specific load combinations.</p>
+  <section id="explore" hidden>
+    <h2>Inspect a load case</h2>
+    <div class="selectors">
+      <label>Tributary width <select id="width"><option value="3">3 m</option><option value="6">6 m</option></select></label>
+      <label>Load combination <select id="combination"><option value="ULS-01">Ultimate · 1.2G + 1.5Q</option><option value="SLS-01">Service · G + 0.7Q</option></select></label>
+    </div>
+    <p id="readout" aria-live="polite"></p>
+    <div id="plots"></div>
+  </section>
+</main><script src="beam.js"></script></body></html>

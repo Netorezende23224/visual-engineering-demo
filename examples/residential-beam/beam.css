@@ -1,0 +1,6 @@
+figure { margin: 1rem 0; }
+figcaption { color: #3e595f; }
+.selectors { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; }
+.selectors label { display: grid; gap: .25rem; }
+#plots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .8rem; }
+#plots figure svg { margin: .4rem 0; }

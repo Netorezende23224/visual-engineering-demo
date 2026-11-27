@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.861 --> 00:00:03.345
+Calibrate the drawing against the 4.00 m opening.
+
+00:00:03.345 --> 00:00:05.565
+Place one post at each end of the residential opening.
+
+00:00:05.565 --> 00:00:13.601
+Draw the beam between the two posts, then save the calibrated page.
+
+00:00:13.601 --> 00:00:20.333
+The measured span and post positions are copied into the private beam study.
+
+00:00:20.333 --> 00:00:26.997
+At 3 m tributary width, 150 PFC satisfies this gravity section and deflection screen.
+
+00:00:26.997 --> 00:00:30.304
+Increase the tributary width for both permanent and imposed loads to 6 m.
+
+00:00:30.304 --> 00:00:44.758
+The gravity screen now selects 180 PFC. Inspect the ULS diagrams, reactions and trial sections.
+
+00:00:44.758 --> 00:00:53.861
+Reopen the saved study, inspect service deflection and open the calculation report.
