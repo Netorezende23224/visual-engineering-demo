@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.202 --> 00:00:00.760
+Create a private 10 × 13 m gable shed and save an east wind case.
+
+00:00:00.760 --> 00:00:05.406
+Place a 2 × 2 m door in east end bay 1, offset 0.50 m. The example nominates dominant Cpi of +0.70 and −0.50.
+
+00:00:05.406 --> 00:00:11.422
+Isolate the opening frame. The native geometry trims intersected girts and retains the two jambs and header.
+
+00:00:11.422 --> 00:00:16.509
+Compare the sealed reference and both open cases. The effective loaded end area falls by 4 m². Negative Cpi gives −46.55 kN along global Z on that face.
+
+00:00:16.509 --> 00:00:35.720
+The positive internal case gives a 27.546 kNm peak portal moment at F2 under 0.9G + W. Opening frame fixings and open-leaf bracing need separate checks.
+
+00:00:35.720 --> 00:00:41.004
+Edit the opening as a side window with a raised sill. Reopen the saved window geometry in the same project.

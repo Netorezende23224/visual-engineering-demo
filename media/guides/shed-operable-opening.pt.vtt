@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.202 --> 00:00:00.760
+Crie um galpão privado de duas águas de 10 × 13 m e salve o caso de vento de leste.
+
+00:00:00.760 --> 00:00:05.406
+Posicione uma porta de 2 × 2 m no painel 1 da face leste, a 0,50 m do início. O exemplo adota Cpi dominante de +0,70 e −0,50.
+
+00:00:05.406 --> 00:00:11.422
+Isole o quadro da abertura. A geometria recorta as longarinas interceptadas e mantém as duas jambas e a verga.
+
+00:00:11.422 --> 00:00:16.509
+Compare a referência fechada aos dois casos abertos. A área carregada da face diminui 4 m². Com Cpi negativo a força nessa face é −46,55 kN no eixo Z global.
+
+00:00:16.509 --> 00:00:35.720
+O caso interno positivo produz momento máximo de 27,546 kNm no pórtico F2 em 0,9G + W. As fixações e o contraventamento com a folha aberta exigem verificações próprias.
+
+00:00:35.720 --> 00:00:41.004
+Edite a abertura como uma janela lateral com peitoril elevado e reabra a geometria salva no mesmo projeto.
