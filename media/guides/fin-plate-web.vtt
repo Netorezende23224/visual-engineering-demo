@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.709 --> 00:00:05.235
+Open the start bearing of the saved residential 180 PFC beam.
+
+00:00:05.235 --> 00:00:13.546
+The ULS bearing action is 36.13 kN downwards. The native search selects two M16 bolts.
+
+00:00:13.546 --> 00:00:18.644
+The trial root fillets govern at 91.28%. The beam web, rupture paths and supporting member still need review.
+
+00:00:18.644 --> 00:00:24.167
+Keep the 120 × 90 × 6 mm plate and 50 mm pitch, then try two M12 bolts under the same actions.
+
+00:00:24.167 --> 00:00:29.303
+Bolt shear now reaches 133.60%. The connection screen flags the failed component.
+
+00:00:29.303 --> 00:00:32.989
+Return to automatic sizing, save the geometry mode and reopen the private study.
+
+00:00:32.989 --> 00:00:40.217
+Read the worked bolt and weld equations in the browser. The engineer reviews the complete joint.
