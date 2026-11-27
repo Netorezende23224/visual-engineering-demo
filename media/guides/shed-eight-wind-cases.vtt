@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.179 --> 00:00:00.995
+Create a 10 × 13 m training shed. Open WindLab from its saved revision.
+
+00:00:00.995 --> 00:00:05.968
+Set the east topographic multiplier to 1.20 in the eight-sector exposure table. The other sectors retain their common factors.
+
+00:00:05.968 --> 00:00:14.458
+Confirm the shared external coefficients. Enter +0.20 and −0.30 as separate internal pressure scenarios.
+
+00:00:14.458 --> 00:00:19.517
+Read the eight independent wind cases. East wind and negative Cpi give +1.797 kPa on the windward field. West has a lower approach speed.
+
+00:00:19.517 --> 00:00:25.603
+Column F4 is controlled by east wind with Cpi −0.30 under 0.9G + W. Check the separately governing direction for the rafter and service drift.
+
+00:00:25.603 --> 00:00:30.631
+Strap SH-085 reaches 16.278 kN. The entered screw group limits the resistance to 8.4 kN. The demand exceeds resistance.
+
+00:00:30.631 --> 00:00:49.122
+Read the calculation book within the project. The comparison chapter records the same eight cases and the signed governing actions.
+
+00:00:49.122 --> 00:00:52.636
+Reopen the saved project and check the two enclosure coefficients. The engineer reviews the inputs, failed checks and any pending stability checks.

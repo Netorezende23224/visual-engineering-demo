@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.179 --> 00:00:00.995
+Crie um galpão de exemplo de 10 × 13 m e abra o WindLab a partir da revisão salva.
+
+00:00:00.995 --> 00:00:05.968
+Na tabela dos oito setores, use Mt de 1,20 no setor leste. Os outros setores conservam os fatores comuns.
+
+00:00:05.968 --> 00:00:14.458
+Revise os coeficientes externos e informe +0,20 e −0,30 como dois cenários independentes de pressão interna.
+
+00:00:14.458 --> 00:00:19.517
+Leia os oito casos calculados. Vento de leste com Cpi negativo produz +1,797 kPa no campo de barlavento. O vento de oeste tem velocidade menor.
+
+00:00:19.517 --> 00:00:25.603
+O pilar do pórtico F4 é governado por vento de leste e Cpi −0,30 em 0,9G + W. Confira também os casos que controlam a viga de cobertura e o deslocamento em serviço.
+
+00:00:25.603 --> 00:00:30.631
+A fita SH-085 chega a 16,278 kN. O grupo de parafusos informado limita a resistência a 8,4 kN. A demanda supera a resistência.
+
+00:00:30.631 --> 00:00:49.122
+Leia a memória de cálculo dentro do projeto. O capítulo de comparação registra os mesmos oito casos e as ações governantes com seus sinais.
+
+00:00:49.122 --> 00:00:52.636
+Reabra o projeto e confira os coeficientes internos salvos. O engenheiro revisa as hipóteses, os limites excedidos e a estabilidade pendente.
