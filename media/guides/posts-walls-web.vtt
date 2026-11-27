@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.706 --> 00:00:05.211
+Open a post study from the saved pinned bearing of the residential 180 PFC beam.
+
+00:00:05.211 --> 00:00:10.237
+Check the characteristic G and Q reactions and the 36.13 kN ultimate bearing action before post self-weight.
+
+00:00:10.237 --> 00:00:15.209
+Select a 4.60 m post, pinned at both ends. The 75 PFC exceeds the preliminary compression screen.
+
+00:00:15.209 --> 00:00:21.144
+Allow catalogue upgrades. The solver selects 125 PFC with 66.57% compression utilisation.
+
+00:00:21.144 --> 00:00:29.205
+Save, reopen and read the service response and the native post calculation report.
+
+00:00:29.205 --> 00:00:33.682
+Start a separate 4.00 m wall with 2.70 m studs and distribute 20 kN permanent and 30 kN imposed load across its head.
+
+00:00:33.682 --> 00:00:38.773
+Without effective noggin restraint, the single C90 stud exceeds the screen at 129.60%. Compare the twelve options.
+
+00:00:38.773 --> 00:00:45.880
+In this second scenario, assume effective restraint at 1.20 m. Utilisation drops to 25.60%. The engineer verifies that restraint.
+
+00:00:45.880 --> 00:00:51.835
+Open the wall report for the load cases, alternative layouts and remaining design checks.

@@ -1,0 +1,26 @@
+<!doctype html><html lang="en-AU"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post section and wall restraint comparison · Visual Engineering</title>
+<link rel="stylesheet" href="../residential-bracing/plan.css"><link rel="stylesheet" href="support.css">
+</head><body><main>
+<a href="../../#watch-posts-walls-web">← Watch the browser walkthrough</a>
+<h1>Post section and wall restraint</h1>
+<p>Compare two changes to a residential design. The post takes a concentrated beam reaction. A separate stud wall carries loads distributed along its head.</p>
+<h2>Post below the kitchen beam</h2>
+<p>The 180 PFC beam over the 4.00 m opening delivers 36.13 kN of ultimate gravity load to the bearing. The post is 4.60 m tall and pinned at both ends. Each trial includes the selected post’s own weight.</p>
+<table><thead><tr><th>Section</th><th>ULS base load</th><th>Compression upper bound</th><th>Use</th></tr></thead>
+<tbody><tr><th>75 PFC</th><td>36.45 kN</td><td>10.08 kN</td><td>361.8%</td></tr>
+<tr><th>125 PFC</th><td>36.78 kN</td><td>55.24 kN</td><td>66.6%</td></tr></tbody></table>
+<p><a href="../residential-beam/">Trace the reaction back to the floor loading and beam</a></p>
+<h2>Stud wall with two restraint assumptions</h2>
+<p>The 4.00 m wall is 2.70 m high with single C90 studs, 0.75 mm base metal thickness, at 600 mm nominal centres. A total of 20 kN permanent and 30 kN imposed load acts uniformly across the wall head. Effective noggin restraint changes the weak-axis buckling length.</p>
+<table><thead><tr><th>Weak-axis length</th><th>ULS per interior stud</th><th>Compression upper bound</th><th>Use</th></tr></thead>
+<tbody><tr><th>2.70 m</th><td>9.92 kN</td><td>7.66 kN</td><td>129.6%</td></tr>
+<tr><th>1.20 m</th><td>9.92 kN</td><td>38.76 kN</td><td>25.6%</td></tr></tbody></table>
+<section id="explorer" hidden>
+<h2>Inspect the axial response</h2><div class="choices">
+<label>Member and design case<select id="member"><option value="post75">Post · 75 PFC</option><option value="post125">Post · 125 PFC</option><option value="wallFull">Wall · full-height weak-axis length</option><option value="wallBraced">Wall · effective restraint at 1.20 m</option></select></label>
+<label>Load case<select id="load"><option value="0">Ultimate gravity</option><option value="1">Service total</option></select></label></div>
+<p id="status" aria-live="polite"></p><div id="plots"></div></section>
+<p>These are preliminary compression screens. The engineer confirms that the restraints can deliver the assumed stiffness and checks the applicable member resistance, connections and full load path.</p>
+</main><script src="support.js"></script></body></html>

@@ -1,0 +1,4 @@
+.choices,#plots {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}
+.choices label {display:grid;gap:.25rem}
+#plots figure {margin:0}
+#plots svg {margin:.4rem 0}
