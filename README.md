@@ -21,7 +21,7 @@ Both checkouts renew monthly in Australian dollars. The Visual Engineering subsc
 | Visual Engineering | A$100 | [Subscribe to Visual Engineering](https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01) |
 | OzziPDF | A$100 | [Subscribe to OzziPDF](https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03) |
 
-The asking price for an exclusive acquisition of the Visual Engineering source and transferable rights is A$20,000. [Enquire about the package and handover](https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry).
+The asking price for an exclusive acquisition of the Visual Engineering source and transferable rights is A$250,000. [Enquire about the package and handover](https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry).
 
 ## Preview locally
 

@@ -255,3 +255,17 @@ h1, h2, h3 { font-weight: 600; }
   [data-guide-panel][hidden] { display: block !important; }
   .guide-panel { break-inside: avoid; }
 }
+
+.tool-catalogue {padding-block:2.2rem 3.5rem}
+.tool-examples {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.2rem;align-items:start}
+.tool-example {border-top:1px solid var(--line);padding:.75rem 0}
+.tool-example summary {font-weight:650;cursor:pointer}
+.tool-example p,.tool-example dl {font-size:.9rem;margin:.7rem 0}
+.tool-example dt {font-weight:650}
+.tool-example dd {margin:0 0 .55rem;color:var(--muted)}
+.lintel-options {display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;padding:.7rem .9rem}
+.lintel-options label {display:flex;gap:.4rem;align-items:center;font-size:.78rem}
+.lintel-options select {max-width:100%;font:inherit;padding:.3rem}
+#lintel-preview {display:block;width:100%;height:auto;touch-action:pan-y;cursor:grab}
+#lintel-preview[hidden],#lintel-cover[hidden],.lintel-options[hidden] {display:none}
+@media(max-width:630px){.tool-examples{grid-template-columns:1fr}.guide-nav{flex-wrap:wrap;gap:0 .8rem}.main-nav{gap:1rem}}
