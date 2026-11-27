@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:01.147 --> 00:00:05.275
+Set the interior posts at 1.5 m centres. The surface strip carries 18 kPa, starts 0.8 m behind the wall and is 2 m wide.
+
+00:00:05.275 --> 00:00:11.382
+Select the 2.2 m wall in Good backfill. LC1 isolates soil weight. LC5 introduces surcharge and service fence wind.
+
+00:00:11.382 --> 00:00:16.412
+LC9 totals 41.659 kNm. Read how much comes from retained soil, surcharge and fence wind before comparing the demand with the 200UB18.2 section.
+
+00:00:16.412 --> 00:00:21.898
+The vertical marker locates the current height. Coloured curves compare weight, service and ultimate demand. Dots give the resistance of each selected post.
+
+00:00:21.898 --> 00:00:28.771
+Move the surcharge to 3 m setback. Its LC9 moment falls from 2.733 to 0.170 kNm. The trial drilled depth drops from 2.8 to 2.7 m.
+
+00:00:28.771 --> 00:00:33.242
+Issue the selected wall with its full schedule. The report identifies the governing section checks, founding-clay depth, steel embedment and trial cage.

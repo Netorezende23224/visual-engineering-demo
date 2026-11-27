@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:01.147 --> 00:00:05.275
+Defina os pilares internos a cada 1,5 m. A faixa de sobrecarga tem 18 kPa, começa a 0,8 m do muro e tem largura de 2 m.
+
+00:00:05.275 --> 00:00:11.382
+Escolha o muro de 2,2 m no aterro Good. LC1 isola o peso do solo. LC5 inclui a sobrecarga e o vento de serviço na cerca.
+
+00:00:11.382 --> 00:00:16.412
+LC9 totaliza 41,659 kNm. Confira as parcelas do solo, da sobrecarga e do vento antes de comparar o momento com o perfil 200UB18.2.
+
+00:00:16.412 --> 00:00:21.898
+A marca vertical indica a altura selecionada. As curvas comparam peso próprio, serviço e solicitação última. Os pontos mostram a resistência do perfil adotado em cada altura.
+
+00:00:21.898 --> 00:00:28.771
+Afaste a sobrecarga para 3 m. A parcela de momento da sobrecarga em LC9 cai de 2,733 para 0,170 kNm. A profundidade de perfuração calculada passa de 2,8 para 2,7 m.
+
+00:00:28.771 --> 00:00:33.242
+Emita o muro selecionado e sua tabela completa. O relatório identifica os casos do perfil, a profundidade exigida pela argila, o embutimento do aço e a armadura candidata.

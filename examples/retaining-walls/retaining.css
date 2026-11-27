@@ -16,3 +16,13 @@
 .rw-chart{background:#f1f5f4;padding:.8rem;border:1px solid #cbd9d5;border-radius:.3rem}
 .rw-chart h3{margin:0 0 .6rem;font-size:1.02rem}.rw-chart p{margin:.25rem 0;font-size:.82rem}
 .rw-chart svg{width:100%;height:auto}.rw-chart text{font:11px system-ui,sans-serif;fill:#192e36}
+
+#rw-height-plot,#rw-breakdown{margin:1rem 0;max-width:48rem;overflow-x:auto}
+#rw-height-plot svg{display:block;width:100%;max-width:42rem;height:auto}
+#rw-height-plot svg text{font:11px system-ui,sans-serif;fill:#19343d}
+#rw-height-plot table,#rw-breakdown table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+#rw-height-plot td,#rw-height-plot th,#rw-breakdown td,#rw-breakdown th{padding:.35rem;text-align:right;border-bottom:1px solid #bfcecc}
+#rw-breakdown caption,#rw-breakdown td:first-child,#rw-breakdown th:first-child{text-align:left}
+#rw-breakdown caption{font-weight:650}
+.rw-series{display:flex;gap:.55rem 1rem;flex-wrap:wrap;font-size:.9rem}
+.rw-series span{border-left:4px solid;padding-left:.35rem}
