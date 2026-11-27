@@ -1,33 +1,174 @@
 <!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Software subscriptions · Visual Engineering and Ozzi</title>
-<style>
-:root{color-scheme:light;--ink:#162c31;--green:#075d56;--paper:#f7f8f5;--line:#bdceca}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.55 system-ui,sans-serif}
-main,nav{width:min(1140px,92%);margin:auto}nav{border-bottom:1px solid var(--line);padding:20px 0;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-a{color:var(--green);text-underline-offset:.2em}nav a{font-size:.9rem}nav a:first-child{font-weight:700;color:var(--ink);margin-right:auto}
-a:focus-visible{outline:3px solid #ba5020;outline-offset:4px}
-section{margin:55px 0;scroll-margin-top:12px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.15;letter-spacing:-.035em}
-h1{font-size:clamp(2.5rem,6vw,4.75rem);margin-bottom:18px}h2{font-size:clamp(1.8rem,3.5vw,2.7rem);margin-bottom:14px}h3{font-size:1.28rem}
-.intro{max-width:42rem}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:24px}
-article{padding:23px 20px 20px;background:white;border:1px solid var(--line);border-radius:7px;display:flex;flex-direction:column}
-.price{font-size:1.9rem;letter-spacing:-.04em;margin:20px 0}.price small{font-size:.9rem;letter-spacing:0;color:#4f6263}
-.buy{display:flex;justify-content:space-between;align-items:center;background:var(--green);color:#fff;text-decoration:none;font-weight:650;border-radius:4px;padding:11px 14px;margin-top:auto}
-.buy:hover{background:#084a46}.feature{padding-top:30px;border-top:1px solid var(--line)}
-.examples{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}figure{margin:0}figure img{display:block;width:100%;height:auto;background:white;border:1px solid var(--line);border-radius:5px}figcaption{font-size:.9rem;padding-top:6px;color:#44595b}
-.note{max-width:60rem;margin-top:14px;color:#405658;font-size:.9rem}
-@media(max-width:920px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:580px){.examples,.grid{grid-template-columns:1fr}section{margin:36px 0}article{padding:18px}.price{margin:12px 0}nav{gap:14px}}
-</style></head><body>
-<nav aria-label="Sales page"><a href="#subscriptions">Subscriptions</a><a href="#windlab">WindLab example</a><a href="#acquisition">Acquisition</a></nav>
-<main><section id="subscriptions"><h1>Software subscriptions</h1><p class="intro">Choose a program to subscribe through Stripe. Each subscription renews monthly in Australian dollars.</p>
-<div class="grid"><article><h3>Visual Engineering</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01" aria-label="Subscribe to Visual Engineering">Subscribe <span aria-hidden="true">↗</span></a></article>
-<article><h3>OzziGeoLab</h3><p>New subscriptions are temporarily paused.</p></article>
-<article><h3>OzziPDF</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03" aria-label="Subscribe to OzziPDF">Subscribe <span aria-hidden="true">↗</span></a></article>
-<article><h3>OzziLocation</h3><p class="price">A$100 <small>/ month</small></p><a class="buy" href="https://buy.stripe.com/9B614mdeh1Tvdiybg4afS04" aria-label="Subscribe to OzziLocation">Subscribe <span aria-hidden="true">↗</span></a></article></div></section>
-<section id="windlab" class="feature"><h2>Visual Engineering · WindLab</h2><p class="intro">WindLab for Windows looks up addresses in Queensland and New South Wales. Review the indicative wind region, compare wind actions across building faces and export the results to PDF. The Visual Engineering subscription covers this evaluation workflow for one engineering practice.</p>
-<div class="examples"><figure><img src="media/roof-pressures.png" alt="WindLab roof plan with wind pressure zones" width="1188" height="586"><figcaption>Roof corner, edge and field zones</figcaption></figure>
-<figure><img src="media/wall-pressures.png" alt="WindLab pressure zones on the wall elevation" width="1188" height="586"><figcaption>Wall pressures for the same example building</figcaption></figure></div>
-<a href="media/sample-wind-report.pdf">Download the example wind report (PDF)</a><p class="note">The example uses a fictional building. Engineers must verify the wind region, site assumptions, geometry, openings and pressure coefficients before using results on a project. Whole-shed stability and connection qualification remain under development.</p></section>
-<section id="acquisition" class="feature"><h2>Visual Engineering acquisition</h2><p class="intro">The asking price for an exclusive acquisition of the source and transferable rights is A$20,000. Contact the owner to discuss package contents, third-party licences and handover terms.</p><p><a href="https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry">Enquire about acquisition on GitHub</a></p></section>
-</main></body></html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112437">
+  <title>Visual Engineering — Shed 3D and structural software for Windows</title>
+  <meta name="description" content="Explore an interactive steel shed, inspect a Top Hat roof connection and follow worked examples in Shed 3D, WindLab and Drawing Takeoff.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:title" content="Visual Engineering — Inside Shed 3D">
+  <meta property="og:description" content="Orbit a four-bay steel shed and see how the Windows application takes a member from the model to its fixing detail.">
+  <meta property="og:image" content="https://netorezende23224.github.io/visual-engineering-demo/media/shed-3d-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Visual Engineering Shed 3D example showing a four-bay steel portal frame and the selected SH-027 roof purlin.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="media/ve-mark.png" type="image/png">
+  <link rel="preload" href="media/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="site.css">
+  <script defer src="site.js"></script>
+  <script type="module" src="shed-viewer.js"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap mast-row">
+      <a class="brand" href="#top" aria-label="Visual Engineering home"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Visual Engineering</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shed-3d">Shed 3D</a>
+        <a href="#guides">Tool guides</a>
+        <a href="#subscriptions">Pricing</a>
+      </nav>
+      <a class="head-cta" href="#subscriptions">View plans<span class="arrow diagonal" aria-hidden="true"></span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="platform"><span class="win-glyph" aria-hidden="true"></span>Structural software for Windows</p>
+          <h1 id="hero-title">Explore <span class="product-title">Shed <em>3D.</em></span></h1>
+          <p class="hero-lede">Orbit a four-bay steel frame, follow a roof purlin and inspect its fixing. Watch how the same example works in the desktop application.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#guide-shed" data-watch><span class="play-glyph" aria-hidden="true"></span>Watch the walkthrough</a>
+            <a class="hero-link" href="#shed-3d" data-explore>Try the model <span class="arrow diagonal" aria-hidden="true"></span></a>
+          </div>
+          <dl class="hero-specs" aria-label="Example shed dimensions">
+            <div><dt>Span</dt><dd>10 <span>m</span></dd></div>
+            <div><dt>Length</dt><dd>18 <span>m</span></dd></div>
+            <div><dt>Bays</dt><dd>4</dd></div>
+          </dl>
+        </div>
+
+        <div class="workbench" id="shed-3d" data-shed-viewer role="region" aria-labelledby="workbench-title">
+          <div class="bench-head">
+            <div class="bench-name"><span class="model-glyph" aria-hidden="true"></span><h2 id="workbench-title">Shed 3D</h2></div>
+            <div class="view-switch" role="group" aria-label="Model view" data-live-controls>
+              <button type="button" data-shed-view="iso" aria-pressed="true">3D</button>
+              <button type="button" data-shed-view="plan" aria-pressed="false">Plan</button>
+              <button type="button" data-shed-view="end" aria-pressed="false">End</button>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="stage-fallback" data-shed-fallback><img src="media/shed-physical.webp" alt="Physical model of the example steel shed with portal frames, roof purlins and wall girts." width="1152" height="648"></div>
+            <canvas data-shed-canvas tabindex="0" aria-label="Interactive four-bay shed model" aria-describedby="orbit-help orbit-keys">Four-bay portal frame with a 10 metre span and an 18 metre length.</canvas>
+          </div>
+          <div class="bench-layers" role="group" aria-label="Visible member groups" data-live-controls>
+            <button type="button" class="layer layer-frame" data-shed-layer="frame" aria-pressed="true"><i aria-hidden="true"></i>Frame</button>
+            <button type="button" class="layer layer-secondary" data-shed-layer="secondary" aria-pressed="true"><i aria-hidden="true"></i>Top Hats</button>
+            <button type="button" class="layer layer-bracing" data-shed-layer="bracing" aria-pressed="true"><i aria-hidden="true"></i>Bracing</button>
+            <button type="button" class="reset" data-shed-reset aria-label="Reset model view and layers"><span aria-hidden="true">↺</span> Reset</button>
+          </div>
+          <div class="bench-readout"><p data-shed-selection role="status">Four-bay portal frame · 122 members</p><button type="button" data-shed-pick="SH-027" data-live-controls>Inspect SH-027 <span class="arrow diagonal" aria-hidden="true"></span></button></div>
+          <p class="bench-help" id="orbit-help" data-live-controls>Drag or use the arrow keys to rotate. Select a member to inspect it.</p>
+          <p class="screen-reader" id="orbit-keys">Page Up and Page Down select the previous or next visible member. Press Home to reset the model.</p>
+          <p class="fallback-note" data-shed-fallback>Sample from the desktop application. <a href="#guide-shed">Watch the Shed 3D walkthrough</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides wrap" id="guides" aria-labelledby="guides-title">
+      <div class="section-intro">
+        <h2 id="guides-title">Tool guides</h2>
+        <p>Follow a worked example from its inputs to the result shown in the application.</p>
+      </div>
+      <nav class="guide-nav" aria-label="Choose a tool guide" data-guide-nav>
+        <a id="tab-shed" href="#guide-shed"><span class="guide-icon icon-shed" aria-hidden="true"></span>Shed 3D</a>
+        <a id="tab-wind" href="#windlab"><span class="guide-icon icon-wind" aria-hidden="true"></span>WindLab</a>
+        <a id="tab-takeoff" href="#takeoff"><span class="guide-icon icon-plan" aria-hidden="true"></span>Drawing Takeoff</a>
+      </nav>
+
+      <article id="guide-shed" class="guide-panel" data-guide-panel aria-labelledby="shed-guide-heading">
+        <div class="guide-text">
+          <h3 id="shed-guide-heading">Inspect a Top Hat connection</h3>
+          <ol class="steps">
+            <li><strong>Choose the roof member.</strong> In <b>Wind &amp; bracing → Shed generator</b>, open <b>Roof purlins / wall girts</b> in the Members settings. Choose TH64100 for the first and last bays.</li>
+            <li><strong>Calculate and explore.</strong> Click <b>Calculate shed</b>, switch to <b>Physical model</b> and select roof purlin SH-027 in the first bay.</li>
+            <li><strong>Read the fixing detail.</strong> In <b>Connections</b>, inspect SH-027/start. Two No.12 × 20 mm screws, one per foot, resist 5.32 kN against 3.33 kN of outward-wind uplift. The purlin itself exceeds its member-table limits in this example.</li>
+          </ol>
+          <a class="inline-link" href="media/shed-detail.webp">Open the fixing detail <span class="arrow diagonal" aria-hidden="true"></span></a>
+        </div>
+        <figure class="guide-media">
+          <video id="shed-film" controls playsinline preload="metadata" poster="media/shed-physical.webp" aria-label="Shed 3D desktop walkthrough">
+            <source src="media/shed-walkthrough.mp4" type="video/mp4">
+            <track kind="captions" src="media/shed-walkthrough.vtt" srclang="en" label="English">
+            <a href="media/shed-walkthrough.mp4">Download the Shed 3D walkthrough</a>
+          </video>
+          <figcaption><span>Desktop walkthrough</span><a href="media/shed-walkthrough.mp4" download>Download video <span class="arrow down" aria-hidden="true"></span></a></figcaption>
+        </figure>
+      </article>
+
+      <article id="windlab" class="guide-panel" data-guide-panel aria-labelledby="wind-guide-heading">
+        <div class="guide-text">
+          <h3 id="wind-guide-heading">Read wind pressures across a shed</h3>
+          <ol class="steps">
+            <li><strong>Set the wind case.</strong> The sample uses a 12 × 8 m gable building in region B1 with wind from the west and a 20° roof pitch.</li>
+            <li><strong>Compare the surfaces.</strong> Switch between the roof plan and the wall elevation. Trace the corner, edge and field zones back to the selected face.</li>
+            <li><strong>Check the inputs in the report.</strong> The example records pressure coefficients, terrain and opening assumptions. It gives an ultimate wind speed of 47.31 m/s for this case.</li>
+          </ol>
+          <a class="inline-link" href="media/sample-wind-report.pdf">Open the WindLab report (PDF) <span class="arrow diagonal" aria-hidden="true"></span></a>
+        </div>
+        <figure class="guide-media wind-media">
+          <div class="media-tools" data-wind-switch hidden role="group" aria-label="Pressure diagram">
+            <button type="button" aria-pressed="true" data-wind-view="roof">Roof plan</button>
+            <button type="button" aria-pressed="false" data-wind-view="wall">Wall elevation</button>
+          </div>
+          <img data-wind-image="roof" src="media/roof-pressures.png" width="1188" height="586" loading="lazy" alt="WindLab roof plan with corner, edge and field pressure zones.">
+          <img data-wind-image="wall" src="media/wall-pressures.png" width="1188" height="586" loading="lazy" alt="WindLab wall elevation with pressure zones for wind from the west.">
+          <figcaption><span>WindLab output</span><span>West wind · Region B1</span></figcaption>
+        </figure>
+      </article>
+
+      <article id="takeoff" class="guide-panel" data-guide-panel aria-labelledby="takeoff-guide-heading">
+        <div class="guide-text">
+          <h3 id="takeoff-guide-heading">Trace a beam from a drawing</h3>
+          <ol class="steps">
+            <li><strong>Calibrate the drawing.</strong> Set the scale from a known length. Mark the ends of the 4.00 m concrete beam CB5 between L6 and L2.</li>
+            <li><strong>Edit the beam.</strong> Set the section to 250 × 500 mm, enter the 6 kN/m imposed line load and save the project.</li>
+            <li><strong>Reopen and export.</strong> The report gives 53.04 kNm at midspan. Service deflection is 9.531 mm, above the 1.000 mm limit entered for this example.</li>
+          </ol>
+          <a class="inline-link" href="media/takeoff-example.pdf">Open the beam report excerpt (PDF) <span class="arrow diagonal" aria-hidden="true"></span></a>
+        </div>
+        <figure class="guide-media">
+          <img src="media/takeoff-example.webp" alt="CB5 in the Drawing Takeoff example, spanning four metres between its supports." loading="lazy">
+          <figcaption><span>Drawing Takeoff example</span><span>CB5 · 4.00 m</span></figcaption>
+        </figure>
+      </article>
+      <p class="example-note">These worked examples illustrate the software. Project-specific design requires verified site inputs, restraints and engineering review.</p>
+    </section>
+
+    <section class="subscriptions" id="subscriptions" aria-labelledby="pricing-heading">
+      <div class="wrap">
+        <div class="section-intro pricing-intro"><h2 id="pricing-heading">Subscriptions</h2><p>Each subscription renews monthly in Australian dollars. Checkout is hosted by Stripe.</p></div>
+        <div class="offers">
+          <article class="offer primary-offer">
+            <div class="offer-heading"><span class="brand-mark small" aria-hidden="true"><i></i></span><h3>Visual Engineering</h3></div>
+            <p>Windows WindLab evaluation for one engineering practice. The browser demo is free. Private browser projects are in development.</p>
+            <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-dark" href="https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01" aria-label="Subscribe to Visual Engineering for Windows for A$100 per month">Subscribe for Windows <span class="arrow diagonal" aria-hidden="true"></span></a></div>
+          </article>
+          <article class="offer companion-offer">
+            <div class="offer-heading"><span class="pdf-glyph" aria-hidden="true">PDF</span><h3>OzziPDF</h3></div>
+
+            <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-outline" href="https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03" aria-label="Subscribe to OzziPDF for A$100 per month">Subscribe <span class="arrow diagonal" aria-hidden="true"></span></a></div>
+          </article>
+        </div>
+        <details id="acquisition" class="acquisition"><summary>Visual Engineering acquisition enquiries</summary><p>The asking price for the source and transferable rights is <strong>A$20,000</strong> for an exclusive acquisition. Discuss the package, third-party licences and handover terms with the owner. <a href="https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry">Enquire on GitHub <span class="arrow diagonal" aria-hidden="true"></span></a></p></details>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><a class="brand footer-brand" href="#top"><span class="brand-mark small" aria-hidden="true"><i></i></span>Visual Engineering</a><a href="#top">Back to top <span class="arrow up" aria-hidden="true"></span></a></div></footer>
+</body>
+</html>

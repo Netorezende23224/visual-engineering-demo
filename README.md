@@ -1,32 +1,28 @@
-# Software subscriptions
+# Visual Engineering
 
-Choose a program to open its checkout on Stripe. Each subscription renews monthly in Australian dollars.
+Explore the [Visual Engineering product site](https://netorezende23224.github.io/visual-engineering-demo/). The [interactive Shed 3D example](https://netorezende23224.github.io/visual-engineering-demo/#shed-3d) opens in a browser on a phone or computer.
 
-| Software | Subscription | Checkout |
-|---|---|---|
-| Visual Engineering | A$100 per month | [Subscribe to Visual Engineering](https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01) |
-| OzziGeoLab | Temporarily paused | New subscriptions are paused. |
-| OzziPDF | A$100 per month | [Subscribe to OzziPDF](https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03) |
-| OzziLocation | A$100 per month | [Subscribe to OzziLocation](https://buy.stripe.com/9B614mdeh1Tvdiybg4afS04) |
+## Try the tools
 
-## Visual Engineering · WindLab for Windows
+| Tool | What to try |
+| --- | --- |
+| [Shed 3D](https://netorezende23224.github.io/visual-engineering-demo/#guide-shed) | Orbit the 10 × 18 m sample, switch to plan or end view, toggle the member groups and select SH-027. Watch the desktop walkthrough to see how to find the Top Hat fixing. [Open the fixing detail](media/shed-detail.webp) |
+| [WindLab](https://netorezende23224.github.io/visual-engineering-demo/#windlab) | Compare the roof and wall pressures in a west-wind case for a fictional 12 × 8 m building. [Read the example report](media/sample-wind-report.pdf) |
+| [Drawing Takeoff](https://netorezende23224.github.io/visual-engineering-demo/#takeoff) | Trace a four-metre concrete beam, edit its imposed line load and inspect deflection against the project limit. [Read the beam report excerpt](media/takeoff-example.pdf) |
 
-WindLab for Windows looks up addresses in Queensland and New South Wales. Review the indicative wind region, compare wind actions across building faces and export the results to PDF. The Visual Engineering subscription covers the WindLab evaluation workflow for one engineering practice.
+The browser viewer displays 122 members exported from a worked desktop example. Its camera and visibility controls let you inspect that geometry. The calculations and fixing detail shown in the walkthrough belong to the recorded sample.
 
-## Explore an example
+## Subscriptions
 
-These screenshots and the report use the same fictional building and example inputs. The roof view identifies corner and edge zones. The wall view shows how the selected wind direction changes pressure across the faces.
+Both checkouts renew monthly in Australian dollars. The Visual Engineering subscription covers the WindLab evaluation workflow for one engineering practice.
 
-![WindLab roof plan showing pressure zones](media/roof-pressures.png)
+| Product | Monthly price | Checkout |
+| --- | --- | --- |
+| Visual Engineering | A$100 | [Subscribe to Visual Engineering](https://buy.stripe.com/dRm5kC0rvaq16Uack8afS01) |
+| OzziPDF | A$100 | [Subscribe to OzziPDF](https://buy.stripe.com/6oUcN4a2555Hceu2JyafS03) |
 
-![WindLab wall elevation showing pressure zones](media/wall-pressures.png)
+The asking price for an exclusive acquisition of the Visual Engineering source and transferable rights is A$20,000. [Enquire about the package and handover](https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry).
 
-[Download the example wind report (PDF)](media/sample-wind-report.pdf)
+## Preview locally
 
-An engineer must confirm the wind region, site assumptions, geometry, openings and pressure coefficients before using results on a project. Whole-shed stability and connection qualification remain under development.
-
-## Software acquisition
-
-**A$20,000 asking price** for an exclusive acquisition of the Visual Engineering source and transferable rights. Package contents, third-party licences and handover terms are available for discussion before purchase.
-
-[Enquire about acquisition](https://github.com/Netorezende23224/visual-engineering-demo/issues/new?title=Visual%20Engineering%20acquisition%20enquiry)
+Run `python -m http.server 4173` in this directory and open `http://localhost:4173/`. Geometry, films, reports and fonts load from the site itself. The checkout links open Stripe. Font licences are included in [media/fonts](media/fonts).

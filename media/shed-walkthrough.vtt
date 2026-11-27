@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.250
+In Shed setup, open Roof purlins / wall girts.
+
+00:00:03.250 --> 00:00:07.750
+Set TH64100 in the end bays and choose
+Top Hat only for the internal bays.
+
+00:00:07.750 --> 00:00:10.750
+Calculate the 10 × 18 m shed.
+
+00:00:10.750 --> 00:00:16.750
+Switch to Physical model and drag to orbit the frame.
+
+00:00:16.750 --> 00:00:21.250
+Select roof purlin SH-027. Its member checks
+exceed the limits for this example.
+
+00:00:21.250 --> 00:00:24.250
+Open View end fixings and select SH-027/start.
+
+00:00:24.250 --> 00:00:28.250
+The outward wind check uses 3.33 kN of the 5.32 kN
+fixing resistance for this member end.
+
+00:00:28.250 --> 00:00:32.250
+The detail shows one screw through each foot.
