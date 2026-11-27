@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.864 --> 00:00:04.949
+Use o comprimento entre as ancoragens ativa e passiva fixa. Neste exemplo, o cabo tem 20 m e recebe 196 kN no macaco.
+
+00:00:04.949 --> 00:00:10.286
+Informe a acomodação da ancoragem de 4 mm e o módulo do aço de 195.000 MPa. A variação angular por metro e o atrito são uniformes neste exemplo.
+
+00:00:10.286 --> 00:00:15.814
+A acomodação alcança 16,199 m. Na extremidade ativa a força cai para 182,516 kN. Na extremidade passiva permanece em 187,563 kN.
+
+00:00:15.814 --> 00:00:22.396
+Com recuo de 10 mm, a acomodação afeta todo o cabo. A extremidade ativa fica com 174,211 kN e a passiva com 182,047 kN.
+
+00:00:22.396 --> 00:00:28.317
+Emita o cálculo salvo no Project Summary. Confira os dados da ancoragem, a compatibilidade elástica e as forças nas seções antes de adotar a protensão de projeto.

@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.864 --> 00:00:04.949
+Use the complete tendon length between the active and fixed anchors. This 20 m training tendon is stressed to 196 kN at the jack.
+
+00:00:04.949 --> 00:00:10.286
+Enter the anchorage draw-in of 4 mm and tendon modulus of 195,000 MPa. The curvature and duct friction are uniform in this example.
+
+00:00:10.286 --> 00:00:15.814
+Seating reaches 16.199 m. The force at the jack falls to 182.516 kN. At the passive end the force remains 187.563 kN.
+
+00:00:15.814 --> 00:00:22.396
+At 10 mm draw-in, the entire tendon is affected. The active end now carries 174.211 kN and the passive end 182.047 kN.
+
+00:00:22.396 --> 00:00:28.317
+Issue the saved calculation in Project Summary. Review the anchorage data, elastic compatibility and station forces before adopting a prestress for design.
