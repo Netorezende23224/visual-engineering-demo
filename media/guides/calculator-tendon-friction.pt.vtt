@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.554 --> 00:00:01.316
+Abra um estudo de perda por atrito para protensão por uma extremidade. Indique a fonte dos dados do tendão e da bainha.
+
+00:00:01.316 --> 00:00:04.965
+Na extremidade ativa, 1.400 MPa em 140 mm² correspondem a 196 kN. A 20 m, informe ângulo acumulado de 0,12 rad, coeficiente de atrito de 0,2 e ondulação de 0,005 rad/m.
+
+00:00:04.965 --> 00:00:09.140
+A 20 m, a força é 187,563 kN e a perda por atrito é 8,437 kN. Consulte a relação exponencial em Calculation method.
+
+00:00:09.140 --> 00:00:15.070
+Confira outro ponto a 30 m da extremidade ativa, com a mesma mudança angular acumulada. A perda por atrito passa a 10,303 kN. Salve o estudo.
+
+00:00:15.070 --> 00:00:22.835
+Emita a revisão salva no Project Summary. Confira os dados do tendão, as unidades e a parcela de atrito antes de avaliar as demais perdas de protensão.

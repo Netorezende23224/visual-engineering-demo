@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.554 --> 00:00:01.316
+Open a tendon friction study for single-end stressing. Choose the data source for the tendon and duct.
+
+00:00:01.316 --> 00:00:04.965
+At the jack, 1400 MPa over 140 mm² gives 196 kN. At 20 m enter 0.12 rad accumulated angle, friction coefficient 0.2 and angular wobble 0.005 rad/m.
+
+00:00:04.965 --> 00:00:09.140
+The 20 m endpoint has 187.563 kN and a friction loss of 8.437 kN. Read the exponential relationship under Calculation method.
+
+00:00:09.140 --> 00:00:15.070
+Check another point 30 m from the jack with the same cumulative bend. The longer duct gives a friction loss of 10.303 kN. Save the study.
+
+00:00:15.070 --> 00:00:22.835
+Issue the saved revision in Project Summary. Check the tendon data, units and friction component before assessing the remaining prestress losses.
