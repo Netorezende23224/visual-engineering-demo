@@ -32,7 +32,7 @@
         <a href="#guides">Tool guides</a>
         <a href="#subscriptions">Pricing</a>
       </nav>
-      <a class="head-cta" href="#subscriptions">View plans<span class="arrow diagonal" aria-hidden="true"></span></a>
+      <a class="head-cta" href="#client-portal">Client portal<span class="arrow diagonal" aria-hidden="true"></span></a>
     </div>
   </header>
 
@@ -119,6 +119,26 @@
           </video>
           <figcaption>Recorded walkthrough of the example shed.</figcaption>
         </figure>
+        <section class="tutorials" aria-label="Integrated Shed 3D tutorial">
+          <figure id="watch-shed-design-review" class="guide-media tutorial">
+            <figcaption><h4>From a shed extension to wind loads, portal frames and connections</h4>
+              <p>Follow one model through a 3 m skillion extension and a 2 m door. See the WindLab pressure field, the F2 portal diagrams, the SH-024 wall brace and the knee connection. Recorded in the full Shed 3D editor.</p>
+            </figcaption>
+            <video id="shed-design-film" controls playsinline preload="metadata" poster="media/guides/shed-design-review.jpg" aria-label="Shed 3D integrated design walkthrough">
+              <source src="media/guides/shed-design-review.mp4" type="video/mp4">
+              <track kind="captions" src="media/guides/shed-design-review.vtt" srclang="en" label="English">
+              <track kind="captions" src="media/guides/shed-design-review.pt.vtt" srclang="pt-BR" label="Português (Brasil)">
+            </video>
+            <nav class="film-chapters" aria-label="Skip to video chapter">
+              <button type="button" data-film-time="11.3">0:11 Extension</button>
+              <button type="button" data-film-time="19.2">0:19 Door opening</button>
+              <button type="button" data-film-time="29.1">0:29 Wind 3D</button>
+              <button type="button" data-film-time="40.6">0:41 Portal diagrams</button>
+              <button type="button" data-film-time="62.1">1:02 Bracing and capacity</button>
+              <button type="button" data-film-time="80.9">1:21 Connections</button>
+            </nav>
+          </figure>
+        </section>
       </article>
 
       <article id="windlab" class="guide-panel" data-guide-panel aria-labelledby="wind-guide-heading">
@@ -263,6 +283,7 @@
       </article>
       <article id="foundation-soil" class="guide-panel" data-guide-panel aria-labelledby="foundation-soil-heading">
         <div class="guide-text">
+          <a class="inline-link" href="examples/retaining-walls/">Explore the retaining wall schedule and load charts ↗</a>
           <h3 id="foundation-soil-heading">Check the service pressure beneath a strip footing</h3>
           <p>Centred strip footing, 0.60 m wide, concrete depth 0.30 m and unit weight 24 kN/m³. Service contact pressure only.</p>
         </div>
@@ -403,9 +424,9 @@
       <div class="wrap">
         <div class="section-intro pricing-intro"><h2 id="pricing-heading">Subscriptions</h2><p>Monthly prices in Australian dollars.</p></div>
         <div class="offers">
-          <article class="offer primary-offer">
+          <article id="client-portal" class="offer primary-offer">
             <div class="offer-heading"><span class="brand-mark small" aria-hidden="true"><i></i></span><h3>Visual Engineering</h3></div>
-            <p>Try the free browser demo on your phone or computer. The subscription for private online projects will open when the workspace launches.</p>
+            <p>The client portal is awaiting launch. At launch, create an account, verify your email and subscribe to open your private design projects. You can use the public demos now.</p>
             <div class="offer-actions"><p class="price">A$100 <small>/ month</small></p><a class="btn btn-dark" href="#shed-3d">Open the browser demo <span class="arrow diagonal" aria-hidden="true"></span></a></div>
           </article>
           <article class="offer companion-offer">

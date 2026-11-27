@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:02.750 --> 00:00:11.293
+No WindLab, escolha a direção e confira as pressões últimas nas paredes.
+
+00:00:11.293 --> 00:00:15.753
+Adicione uma extensão à direita, de uma água, compartilhando a linha de pilares.
+
+00:00:15.753 --> 00:00:19.143
+A extensão tem 3,0 m. Selecione a parede de extremidade do galpão para a porta.
+
+00:00:19.143 --> 00:00:27.409
+No editor de aberturas, altere a largura da porta para 2,0 m e aplique a alteração.
+
+00:00:27.409 --> 00:00:29.034
+Recalcule o galpão com a extensão, a abertura e o caso de vento atual do WindLab.
+
+00:00:29.034 --> 00:00:40.540
+No Wind 3D, confira as pressões últimas do vento de leste nas superfícies do galpão editado.
+
+00:00:40.540 --> 00:01:02.079
+Na análise do pórtico, selecione o quadro e a combinação. Confira momento, cortante e deslocamento.
+
+00:01:02.079 --> 00:01:08.600
+Siga as forças desde a superfície exposta, pela cobertura e pelos contraventamentos, até às bases.
+
+00:01:08.600 --> 00:01:14.753
+Compare a resistência axial da fita e a resistência do grupo de parafusos em cada extremidade.
+
+00:01:14.753 --> 00:01:20.843
+Painel de parede SH-024 · 7,96 kN na direção da baia. O cálculo considera uma diagonal ativa em tração.
+
+00:01:20.843 --> 00:01:44.378
+Revise as forças simultâneas na base de um pilar e inspecione o modelo da ligação.
+
+00:01:44.378 --> 00:01:49.405
+Antes de aprovar, o engenheiro verifica as hipóteses das ligações, a capacidade das fixações e as pendências.

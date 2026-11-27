@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:02.750 --> 00:00:11.293
+WindLab · choose the wind approach and inspect ULS wall pressures.
+
+00:00:11.293 --> 00:00:15.753
+Shared-column extension · add a right-hand skillion roof to the existing bay.
+
+00:00:15.753 --> 00:00:19.143
+The extension is 3.0 m wide. Select the main end wall for the door.
+
+00:00:19.143 --> 00:00:27.409
+Opening editor · enter a 2.0 m door width and apply the revised framing.
+
+00:00:27.409 --> 00:00:29.034
+Recalculate the edited shed with the current WindLab pressures.
+
+00:00:29.034 --> 00:00:40.540
+Wind 3D · follow the east-wind ULS pressures from WindLab onto the edited shed surfaces.
+
+00:00:40.540 --> 00:01:02.079
+Portal analysis · select the frame and load combination. Read bending, shear and displacement.
+
+00:01:02.079 --> 00:01:08.600
+Trace the force path from the windward surface through the roof and wall braces to the bases.
+
+00:01:08.600 --> 00:01:14.753
+Bracing · compare axial strap resistance and the screw-group resistance at each end.
+
+00:01:14.753 --> 00:01:20.843
+Wall panel SH-024 · 7.96 kN along the bay. The calculation counts one active tension diagonal.
+
+00:01:20.843 --> 00:01:44.378
+Connections · review the simultaneous forces at a column base, then inspect the joint model.
+
+00:01:44.378 --> 00:01:49.405
+Review the joint assumptions, fixing capacities and outstanding checks before engineering approval.

@@ -4,7 +4,7 @@
   const ns='http://www.w3.org/2000/svg';
   const format=n=>n.toLocaleString('en-AU',{maximumFractionDigits:1});
   let key='',site,radius,dir='N',map,cover,buildingData,rays,buildingMessage='',demMessage='',version=0,controllers=[];
-  let selected='';
+  let selected='', pressures={}, adopted={}, allCover={};
   const archived=()=>site && geo.savedSite(site.lat,site.lon,radius);
   function svg(tag,attrs,text){
     const n=document.createElementNS(ns,tag);
@@ -35,7 +35,7 @@
   function footprints(){
     map?.querySelectorAll('[data-obstacles],[data-terrain-labels]').forEach(e=>e.remove());
     const group=svg('g',{'data-obstacles':'','pointer-events':'none'});
-    if(!map || !buildingData)return;
+    if(!map || !buildingData){directionLabels();return;}
     const scale=100/radius;
     // Combine ordinary footprints into paths to keep large urban sites responsive.
     const areas=new Map();
@@ -51,13 +51,28 @@
         'stroke-width':k==='selected'?1:.25,'fill-opacity':k==='other'?.25:.7,'fill-rule':'evenodd'}));
     }
     map.insertBefore(group,map.querySelector('path')?.closest('svg > *')||null);
+    directionLabels();
+  }
+  function directionLabels(){
+    if(!map)return;
+    map.querySelector('[data-terrain-labels]')?.remove();
     const labels=svg('g',{'data-terrain-labels':'','pointer-events':'none'});
+    const table=el('direction-results');
+    table.replaceChildren();
     geo.dirs.forEach((name,i)=>{
-      const bands=[0,1,2].map(b=>geo.obstacleBand(buildingData,name,b,radius,name===dir?cover?.[b]:null).tc);
-      const caption=bands.every(tc=>tc!==null && tc===bands[0])?'TC'+bands[0]:bands.every(tc=>tc!==null)?'Mixed':'Review';
-      const angle=i*Math.PI/4,x=89*Math.sin(angle),y=-89*Math.cos(angle);
-      labels.append(svg('rect',{x:x-10,y:y-4.6,width:20,height:8,rx:1.4,fill:name===dir?'#ffdfa5':'#fff','fill-opacity':.94}),
-        svg('text',{x,y:y+1.3,'font-size':5.5,'font-weight':700,'text-anchor':'middle',fill:'#173a48'},caption));
+      const bands=buildingData?[0,1,2].map(b=>geo.obstacleBand(buildingData,name,b,radius,allCover?.[name]?.[b] || (name===dir?cover?.[b]:null)).tc):[];
+      const consistent=bands.length && bands.every(tc=>tc!==null && tc===bands[0]);
+      const assessment=consistent?'TC'+bands[0]:bands.some(tc=>tc!==null)?'Mixed / review':'Unassessed';
+      const angle=i*Math.PI/4,x=83*Math.sin(angle),y=-83*Math.cos(angle);
+      const q=pressures[name]?.q, net=pressures[name]?.net, tc=adopted[name];
+      const badge=tc?'TC'+tc:consistent?assessment+'?':assessment==='Unassessed'?'TC ?':'Mixed TC';
+      labels.append(svg('rect',{x:x-18,y:y-7.5,width:36,height:15,rx:2,fill:name===dir?'#ffe2f0':'white','fill-opacity':.95}),
+        svg('text',{x,y:y-1,'font-size':5.4,'font-weight':700,'text-anchor':'middle',fill:'#253348'},badge),
+        svg('text',{x,y:y+5,'font-size':4.8,'text-anchor':'middle',fill:'#253348'},Number.isFinite(q)?q.toFixed(3)+' kPa':'q unavailable'));
+      const row=table.insertRow();
+      for(const value of [name,assessment,tc?'TC'+tc:'—',Number.isFinite(q)?q.toFixed(3):'—',Number.isFinite(net)?net.toFixed(3):'—']){
+        row.insertCell().textContent=value;
+      }
     });
     map.append(labels);
   }
@@ -139,7 +154,8 @@
   el('context-footprint').onchange=e=>{selected=e.target.value;buildingDetail();footprints();};
   el('context-retry').onclick=refresh;
   window.VESiteSurvey={
-    show(point,metres,sector,svgMap,landCover){
+    show(point,metres,sector,svgMap,landCover,values={},terrain={},sectorCover={}){
+      pressures=values;adopted=terrain;allCover=sectorCover;
       const next=point ? point.lat+','+point.lon+','+metres : '';
       const changedDirection=dir!==sector, changedCover=cover!==landCover;
       site=point;radius=metres;dir=sector;map=svgMap;cover=landCover;

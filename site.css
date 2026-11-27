@@ -272,3 +272,7 @@ h1, h2, h3 { font-weight: 600; }
 .tutorial h4 { margin: 0 0 .35rem; font-size: 1.1rem; }
 .tutorial figcaption p { margin: 0; font-size: .92rem; }
 .guide-media.tutorial video { display: block; aspect-ratio: 1360 / 860; }
+
+.film-chapters { display:flex; flex-wrap:wrap; gap:.5rem; padding:.8rem; }
+.film-chapters button { min-height:2.5rem; padding:.3rem .65rem; background:#f0f4f3; color:#193947; border:1px solid #a8bbbf; border-radius:.3rem; cursor:pointer; font:inherit; }
+#client-portal,#watch-shed-design-review { scroll-margin-top:5rem; }

@@ -3,9 +3,14 @@
 <p id="site-location">1 William Street, Brisbane QLD 4000 · 27.47519° S, 153.02580° E</p>
 <nav aria-label="Public example sites"><a href="?site=the-gap">Yuruga Street · buildings and LiDAR</a> · <a href="?site=city">1 William Street · city wind case</a></nav>
 <div class="controls"><label>Map layer <select id="layer"><option value="streets">Street map</option><option value="cover">2021 land cover</option></select></label><label>Upwind sector <select id="direction"></select></label><label>Viewing radius <select id="radius"><option>350</option><option selected>700</option><option>1400</option></select> m</label></div>
+<label>Example terrain for selected direction <select id="example-tc"><option>1</option><option>2</option><option>2.5</option><option selected>3</option><option>4</option></select></label>
+<p>Worked example at 10 m height with a regional ULS speed of 57 m/s. Each direction starts at TC3. Change a sector to compare pressures. Other speed multipliers are 1.0 and the net windward pressure coefficient is +0.70. The engineer reviews mapped terrain before adopting it.</p>
 <figure><svg viewBox="-127 -127 254 254" role="img" aria-label="Site-centred map with eight true-north sectors and three distance bands"></svg>
 <figcaption><span id="status" role="status"></span> <a id="credit" href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></figcaption></figure>
 <section class="site-context" id="site-context" aria-labelledby="neighbourhood-heading">
+<section aria-labelledby="direction-heading"><h3 id="direction-heading">Ultimate wind pressure by approach direction</h3>
+<p>Pink spokes point upwind. Each map label shows terrain category and ULS velocity pressure q. A question mark marks a terrain estimate. Net pressure uses the windward wall field coefficients for a face normal to the approach.</p>
+<div class="direction-scroll"><table><thead><tr><th>Wind from</th><th>Mapped terrain</th><th>Input terrain</th><th>q ULS (kPa)</th><th>Net wall (kPa)</th></tr></thead><tbody id="direction-results"></tbody></table></div></section>
 <h2 id="neighbourhood-heading">Buildings and ground profile</h2>
 <p id="context-location">Select a site to inspect its surroundings.</p>
 <a id="context-source" hidden>Saved survey sources, dates and licences</a>

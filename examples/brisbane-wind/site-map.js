@@ -25,34 +25,47 @@
     svg.append(element);return element;
   }
   function polar(a,r) {return [Math.sin(a/degrees)*r,-Math.cos(a/degrees)*r];}
+  const exampleTerrain=Object.fromEntries(dirs.map(d=>[d,'3']));
+  const multiplier={'1':1.08,'2':1,'2.5':.92,'3':.83,'4':.75};
+  field('example-tc').onchange=()=>{exampleTerrain[field('direction').value]=field('example-tc').value;overlay();};
   function overlay() {
     svg.querySelectorAll('[data-overlay]').forEach(e=>e.remove());
     const before=svg.childElementCount, bearing=dirs.indexOf(field('direction').value)*45;
-    node('path',{d:'M0,0 L'+polar(bearing-22.5,100)+' A100,100 0 0 1 '+polar(bearing+22.5,100)+' Z',fill:'#0d6792','fill-opacity':.21,stroke:'#0a4766','stroke-width':1});
+    node('path',{d:'M0,0 L'+polar(bearing-22.5,100)+' A100,100 0 0 1 '+polar(bearing+22.5,100)+' Z',fill:'#0d6792','fill-opacity':.21,stroke:'#df3588','stroke-width':1});
     for(const r of [100/3,200/3,100])node('circle',{cx:0,cy:0,r,stroke:'#223c4c',fill:'none','stroke-width':.65});
     dirs.forEach((dir,i)=>{
       const [x,y]=polar(i*45-22.5,100);
-      node('line',{x1:0,y1:0,x2:x,y2:y,stroke:'#233d4a','stroke-width':.6});
+      node('line',{x1:0,y1:0,x2:x,y2:y,stroke:'#da3685','stroke-width':.85});
+      const [cx,cy]=polar(i*45,100);
+      node('line',{x1:0,y1:0,x2:cx,y2:cy,stroke:'#ff66b2','stroke-width':dir===field('direction').value?2.4:1.2});
       const [tx,ty]=polar(i*45,113);
       node('text',{x:tx,y:ty+3,'text-anchor':'middle','font-size':9,'font-weight':700,stroke:'white','stroke-width':2.7,'paint-order':'stroke',fill:'#203744'},dir);
     });
     node('circle',{cx:0,cy:0,r:3.2,fill:'#10394d',stroke:'white','stroke-width':1});
     [...svg.children].slice(before).forEach(e=>e.dataset.overlay='');
-    const bands=[{},{},{}];
+    const sectorBands=Object.fromEntries(dirs.map(d=>[d,[{},{},{}]]));
+    const bands=sectorBands[field('direction').value];
     if(raster){
       for(let y=0;y<256;y++)for(let x=0;x<256;x++){
         const east=(x+.5)/128-1,north=1-(y+.5)/128,dist=Math.hypot(east,north);
-        if(dist>1 || Math.floor(((Math.atan2(east,north)*degrees+382.5)%360)/45)!==bearing/45) continue;
+        if(dist>1)continue;
+        const name=dirs[Math.floor(((Math.atan2(east,north)*degrees+382.5)%360)/45)];
         const i=(256*y+x)*4,c=raster[i+3]===255?classes[[raster[i],raster[i+1],raster[i+2]].join(',')]:'Unknown';
-        const row=bands[Math.min(2,Math.floor(dist*3))],key=c||'Unknown';row[key]=(row[key]||0)+1;
+        const row=sectorBands[name][Math.min(2,Math.floor(dist*3))],key=c||'Unknown';row[key]=(row[key]||0)+1;
       }
     }
     const radius=Number(field('radius').value);
-    const cover=bands.map(band=>{
+    const sectorCover=Object.fromEntries(dirs.map(d=>[d,sectorBands[d].map(band=>{
       const entry=Object.entries(band).sort((a,b)=>b[1]-a[1])[0];
       return entry ? {cover:entry[0],percent:100*entry[1]/Object.values(band).reduce((a,b)=>a+b,0)} : null;
-    });
-    window.VESiteSurvey.show({lat,lon,label:siteLabel},radius,field('direction').value,svg,cover);
+    })]));
+    field('example-tc').value=exampleTerrain[field('direction').value];
+    const values={};
+    for(const d of dirs){
+      const speed=Math.max(30,57*multiplier[exampleTerrain[d]]), q=.0006*speed**2;
+      values[d]={q,net:q*.7};
+    }
+    window.VESiteSurvey.show({lat,lon,label:siteLabel},radius,field('direction').value,svg,sectorCover[field('direction').value],values,exampleTerrain,sectorCover);
     field('sector').textContent=field('direction').value+' · upwind bands';
     field('bands').replaceChildren(...bands.map((band,i)=>{
       const li=document.createElement('li'),entry=Object.entries(band).sort((a,b)=>b[1]-a[1])[0];

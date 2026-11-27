@@ -5,6 +5,14 @@
   const video = document.getElementById('shed-film');
   const viewer = document.querySelector('[data-shed-viewer]');
 
+  const designFilm = document.getElementById('shed-design-film');
+  document.querySelector('.film-chapters').addEventListener('click', event => {
+    const chapter = event.target.closest('[data-film-time]');
+    if (!chapter) return;
+    designFilm.currentTime = Number(chapter.dataset.filmTime);
+    designFilm.play().catch(() => designFilm.focus());
+  });
+
   function showGuide(index) {
 
     tabs.forEach((tab, i) => {

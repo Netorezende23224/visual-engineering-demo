@@ -6,3 +6,7 @@
 #obstacle-bands p,#sector-terrain,#slope-result,#footprint-detail{font-size:.94em}
 #context-retry:disabled{opacity:.6}
 .site-context details p{max-width:78ch}
+
+.direction-scroll{overflow-x:auto}
+.direction-scroll table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+.direction-scroll td,.direction-scroll th{padding:.4em;text-align:left;border-bottom:1px solid #c6d4d8}
