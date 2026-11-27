@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.167 --> 00:00:01.408
+Save a 10 × 13 m workshop with east wind. In the first end-wall bay, apply a two-metre square door.
+
+00:00:01.408 --> 00:00:05.367
+Keep door D1. Add window W1 in the second east end-wall panel, with a 0.80 m sill and a 2.00 × 1.20 m clear opening.
+
+00:00:05.367 --> 00:00:09.980
+Isolate both opening frames. Next nominate D1 for the individual portal analysis, with W1 closed.
+
+00:00:09.980 --> 00:00:16.372
+Review a separate pair of coefficients for both leaves open together: +0.80 and −0.60. Calculate the project.
+
+00:00:16.372 --> 00:00:21.454
+With both leaves open at positive internal pressure, the roof receives −26.016 kN. Read the separate end-face base loads, roof loads and moments.
+
+00:00:21.454 --> 00:00:26.619
+Strap SH-085 needs 9.208 kN. The adopted axial resistance is 8.400 kN, giving a demand-to-resistance ratio of 1.096. This case exceeds the entered capacity.
+
+00:00:26.619 --> 00:00:46.761
+Reversing the internal coefficient to −0.60 gives 7.924 kN in SH-089. The positive case governs. Foundation, collector and joint strength still require engineering review.
+
+00:00:46.761 --> 00:00:52.163
+Read the report in the project. Reopen the saved schedule and verify both marks and the group coefficients.

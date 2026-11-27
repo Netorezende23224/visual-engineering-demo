@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.167 --> 00:00:01.408
+Salve um galpão de 10 × 13 m com vento de leste e insira uma porta de 2 × 2 m no primeiro painel da fachada.
+
+00:00:01.408 --> 00:00:05.367
+Mantenha a porta D1. Acrescente a janela W1 no segundo painel da fachada leste, com peitoril a 0,80 m e abertura livre de 2,00 × 1,20 m.
+
+00:00:05.367 --> 00:00:09.980
+Isole os dois quadros. Em seguida, selecione D1 para a análise individual do pórtico, com W1 fechada.
+
+00:00:09.980 --> 00:00:16.372
+Informe um par independente para a porta e a janela abertas juntas: +0,80 e −0,60. Calcule o projeto.
+
+00:00:16.372 --> 00:00:21.454
+Com as duas aberturas e pressão interna positiva, a cobertura recebe −26,016 kN. Confira as forças nas bases e na cobertura e os momentos de cada fachada.
+
+00:00:21.454 --> 00:00:26.619
+A cinta SH-085 recebe 9,208 kN. A resistência adotada é 8,400 kN. A relação entre demanda e resistência é 1,096 e supera o limite.
+
+00:00:26.619 --> 00:00:46.761
+Com coeficiente interno de −0,60, a cinta SH-089 recebe 7,924 kN. O caso positivo governa. O engenheiro ainda precisa verificar fundações, coletores e ligações.
+
+00:00:46.761 --> 00:00:52.163
+Leia o relatório no projeto. Reabra a lista salva e confira as duas marcas e os coeficientes do grupo.
