@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.169 --> 00:00:02.907
+Open Calculators and create a private floor slab study.
+
+00:00:02.907 --> 00:00:06.984
+Choose the supplied precast section. Enter the product identifier and the revision of the section schedule. The demonstration uses illustrative data.
+
+00:00:06.984 --> 00:00:11.422
+Enter 120,000 mm² of actual material area, excluding voids. The specified inertia is 500 million mm⁴ and the centroid is 90 mm below the top face.
+
+00:00:11.422 --> 00:00:16.557
+On a six-metre simple span, the section weighs 2.88 kPa. The ultimate midspan moment is 34.452 kNm and the reaction at each bearing in service is 17.64 kN.
+
+00:00:16.557 --> 00:00:21.810
+Open the transfer and service results. Inspect top and bottom stresses and the net displacement. These elastic demands require an engineer’s resistance and serviceability checks.
+
+00:00:21.810 --> 00:00:27.237
+Read the calculation in the browser, then reopen the saved project and check its section source and results.
