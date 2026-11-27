@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.570 --> 00:00:03.788
+Localize a referência viária da Yuruga Street, no bairro The Gap, em Brisbane.
+
+00:00:03.788 --> 00:00:07.862
+Os oito raios rosa apontam de onde vem o vento. Cada setor mostra a categoria de terreno adotada e a pressão de velocidade última.
+
+00:00:07.862 --> 00:00:12.936
+Selecione a pressão líquida na parede de barlavento. A comparação considera uma parede perpendicular ao vento de cada direção.
+
+00:00:12.936 --> 00:00:17.087
+Somente neste exemplo, adote um fator topográfico de 1,25 no setor nordeste. Cabe ao engenheiro determinar o fator para o local do projeto.
+
+00:00:17.087 --> 00:00:22.109
+Gire a face norte do modelo para o rumo de 22,5 graus verdadeiros. O WindLab usa os fatores dos setores em torno de cada normal.
+
+00:00:22.109 --> 00:00:29.310
+Para a face norte, governa o vento de nordeste a 45 graus. A pressão líquida na parede é de 1,469 kPa no estado último e 0,688 kPa em serviço.

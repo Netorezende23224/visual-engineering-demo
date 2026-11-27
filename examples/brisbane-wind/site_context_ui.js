@@ -65,10 +65,12 @@
       const assessment=consistent?'TC'+bands[0]:bands.some(tc=>tc!==null)?'Mixed / review':'Unassessed';
       const angle=i*Math.PI/4,x=83*Math.sin(angle),y=-83*Math.cos(angle);
       const q=pressures[name]?.q, net=pressures[name]?.net, tc=adopted[name];
+      const netSelected=el('map-pressure-kind').value==='net';
+      const pressure=netSelected?net:q;
       const badge=tc?'TC'+tc:consistent?assessment+'?':assessment==='Unassessed'?'TC ?':'Mixed TC';
       labels.append(svg('rect',{x:x-18,y:y-7.5,width:36,height:15,rx:2,fill:name===dir?'#ffe2f0':'white','fill-opacity':.95}),
         svg('text',{x,y:y-1,'font-size':5.4,'font-weight':700,'text-anchor':'middle',fill:'#253348'},badge),
-        svg('text',{x,y:y+5,'font-size':4.8,'text-anchor':'middle',fill:'#253348'},Number.isFinite(q)?q.toFixed(3)+' kPa':'q unavailable'));
+        svg('text',{x,y:y+5,'font-size':4.8,'text-anchor':'middle',fill:'#253348'},Number.isFinite(pressure)?pressure.toFixed(3)+' kPa':'unavailable'));
       const row=table.insertRow();
       for(const value of [name,assessment,tc?'TC'+tc:'—',Number.isFinite(q)?q.toFixed(3):'—',Number.isFinite(net)?net.toFixed(3):'—']){
         row.insertCell().textContent=value;
@@ -151,6 +153,7 @@
       rays=result;demMessage=archived()?'Queensland bare-earth LiDAR DEM 2019 · metres AHD.':'Terrain Tiles · sampled elevation profile in metres.';profile();
     },()=>{demMessage='Elevation data unavailable. Slope and crest position remain unassessed.';profile();});
   }
+  el('map-pressure-kind').onchange=directionLabels;
   el('context-footprint').onchange=e=>{selected=e.target.value;buildingDetail();footprints();};
   el('context-retry').onclick=refresh;
   window.VESiteSurvey={

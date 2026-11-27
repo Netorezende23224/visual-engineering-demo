@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.570 --> 00:00:03.788
+Find the road reference point on Yuruga Street in The Gap, Brisbane.
+
+00:00:03.788 --> 00:00:07.862
+The eight pink spokes point upwind. Each sector label shows the input terrain category and ultimate velocity pressure.
+
+00:00:07.862 --> 00:00:12.936
+Switch to net windward wall pressure. This comparison assumes a wall normal to each approach.
+
+00:00:12.936 --> 00:00:17.087
+For this example only, assign a topographic multiplier of 1.25 to the northeast sector. The engineer determines this input from the site.
+
+00:00:17.087 --> 00:00:22.109
+Rotate the north model face to 22.5 degrees true. WindLab uses the sector factors around each new face normal.
+
+00:00:22.109 --> 00:00:29.310
+For the north face, the northeast approach at 45 degrees governs. Net wall pressure is 1.469 kPa ultimate and 0.688 kPa service.

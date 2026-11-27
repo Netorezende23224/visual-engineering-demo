@@ -2,14 +2,15 @@
 <body><main><a href="../../#watch-wind-site">← WindLab video</a><h1>Brisbane wind site</h1>
 <p id="site-location">1 William Street, Brisbane QLD 4000 · 27.47519° S, 153.02580° E</p>
 <nav aria-label="Public example sites"><a href="?site=the-gap">Yuruga Street · buildings and LiDAR</a> · <a href="?site=city">1 William Street · city wind case</a></nav>
-<div class="controls"><label>Map layer <select id="layer"><option value="streets">Street map</option><option value="cover">2021 land cover</option></select></label><label>Upwind sector <select id="direction"></select></label><label>Viewing radius <select id="radius"><option>350</option><option selected>700</option><option>1400</option></select> m</label></div>
+<div class="controls"><label>Map layer <select id="layer"><option value="streets">Street map</option><option value="cover">2021 land cover</option></select></label><label>Upwind sector <select id="direction"></select></label>
+    <label>Pressure shown on map <select id="map-pressure-kind"><option value="q">ULS velocity pressure q (kPa)</option><option value="net">ULS net windward wall pressure (kPa)</option></select></label><label>Viewing radius <select id="radius"><option>350</option><option selected>700</option><option>1400</option></select> m</label></div>
 <label>Example terrain for selected direction <select id="example-tc"><option>1</option><option>2</option><option>2.5</option><option selected>3</option><option>4</option></select></label>
 <p>Worked example at 10 m height with a regional ULS speed of 57 m/s. Each direction starts at TC3. Change a sector to compare pressures. Other speed multipliers are 1.0 and the net windward pressure coefficient is +0.70. The engineer reviews mapped terrain before adopting it.</p>
 <figure><svg viewBox="-127 -127 254 254" role="img" aria-label="Site-centred map with eight true-north sectors and three distance bands"></svg>
 <figcaption><span id="status" role="status"></span> <a id="credit" href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></figcaption></figure>
 <section class="site-context" id="site-context" aria-labelledby="neighbourhood-heading">
 <section aria-labelledby="direction-heading"><h3 id="direction-heading">Ultimate wind pressure by approach direction</h3>
-<p>Pink spokes point upwind. Each map label shows terrain category and ULS velocity pressure q. A question mark marks a terrain estimate. Net pressure uses the windward wall field coefficients for a face normal to the approach.</p>
+<p>Pink spokes point upwind. Each map label shows the terrain category and the selected ULS pressure in kPa. A question mark marks a terrain estimate. Net pressure uses the windward wall field coefficients for a face normal to the approach.</p>
 <div class="direction-scroll"><table><thead><tr><th>Wind from</th><th>Mapped terrain</th><th>Input terrain</th><th>q ULS (kPa)</th><th>Net wall (kPa)</th></tr></thead><tbody id="direction-results"></tbody></table></div></section>
 <h2 id="neighbourhood-heading">Buildings and ground profile</h2>
 <p id="context-location">Select a site to inspect its surroundings.</p>
@@ -35,4 +36,13 @@
 
 <div class="case"><section><h2 id="sector"></h2><ol id="bands"></ol><p>Viewing bands divide the radius into thirds. The engineer checks upwind fetch, obstacle heights, terrain transitions and shielding.</p></section>
 <section id="city-case"><h2>Worked west-wind case</h2><dl><dt>Indicative wind region</dt><dd>B1</dd><dt>ULS site speed</dt><dd>47.31 m/s</dd><dt>ULS velocity pressure</dt><dd>1.343 kPa</dd><dt>Windward wall field pressure</dt><dd>+0.940 kPa</dd></dl><p>These values are the recorded WindLab case for the example rectangular building. Selecting a map sector changes the area you inspect.</p></section></div>
+<section id="wind-face-pressure" aria-labelledby="pressure-film-title">
+<h2 id="pressure-film-title">Which wind direction governs a rotated wall?</h2>
+<p>Watch the full WindLab workspace apply an example northeast exposure at The Gap. Rotate the model by 22.5° and compare the ultimate and service pressures on its four faces.</p>
+<video controls playsinline preload="none" width="1440" height="900" poster="../../media/guides/wind-face-pressure.jpg" aria-label="WindLab directional wall pressure example">
+<source src="../../media/guides/wind-face-pressure.mp4" type="video/mp4">
+<track kind="captions" srclang="en" label="English" src="../../media/guides/wind-face-pressure.vtt" default>
+<track kind="captions" srclang="pt-BR" label="Português" src="../../media/guides/wind-face-pressure.pt.vtt">
+</video>
+</section>
 <p><a id="osm-pin" href="https://www.openstreetmap.org/?mlat=-27.47519&amp;mlon=153.02580#map=16/-27.47519/153.02580">Open this public location on OpenStreetMap</a> · <a href="https://doi.org/10.26186/146359">Geoscience Australia indicative regions</a> · <a href="https://esa-worldcover.org/en/data-access">ESA WorldCover</a></p></main><script src="site_context.js"></script><script src="site_context_ui.js"></script><script src="site-map.js"></script></body></html>
