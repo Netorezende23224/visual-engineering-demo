@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.875 --> 00:00:06.325
+Calibrate the drawing against the 10 m dimension. Trace the four corners of panel P1 in order.
+
+00:00:06.325 --> 00:00:11.163
+Send the measured 5 m span and the 200 mm slab depth to the one-way shear study. The original panel and drawing revision follow the calculation.
+
+00:00:11.163 --> 00:00:16.565
+A 30 kPa factored load gives 75 kN/m at the support. The 200 mm slab with N20 bars has an 85.532 kN/m no-links limit.
+
+00:00:16.565 --> 00:00:22.001
+At 40 kPa the support shear increases to 100 kN/m. This exceeds the numerical limit and requires a revised section or separately designed shear reinforcement.
+
+00:00:22.001 --> 00:00:28.757
+Compare a 250 mm trial slab at the same total pressure. The limit rises to 106.915 kN/m. Review the factored load including the revised self-weight for the project.
+
+00:00:28.757 --> 00:00:34.560
+Issue the saved study. Project Summary records both the original depth and the adopted trial depth, the strip actions and the shear checks.

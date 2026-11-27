@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.875 --> 00:00:06.325
+Calibre a prancha pela dimensão de 10 m. Marque em sequência os quatro cantos do painel P1.
+
+00:00:06.325 --> 00:00:11.163
+Envie o vão medido de 5 m e a espessura de 200 mm para o estudo de cisalhamento. O cálculo guarda a marca do painel e a revisão da prancha.
+
+00:00:11.163 --> 00:00:16.565
+Uma carga última de 30 kPa gera 75 kN/m no apoio. Para a laje de 200 mm com barras N20, o limite sem armadura transversal é de 85,532 kN/m.
+
+00:00:16.565 --> 00:00:22.001
+A 40 kPa, o esforço no apoio sobe para 100 kN/m e supera o limite. É necessário rever a seção ou dimensionar armadura transversal.
+
+00:00:22.001 --> 00:00:28.757
+Compare uma laje de 250 mm sob a mesma pressão total. O limite sobe para 106,915 kN/m. No projeto, atualize a carga última para o novo peso próprio.
+
+00:00:28.757 --> 00:00:34.560
+Emita o estudo salvo. O Project Summary registra a espessura original, a espessura adotada, os esforços na faixa e a verificação.
