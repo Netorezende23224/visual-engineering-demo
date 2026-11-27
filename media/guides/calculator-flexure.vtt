@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.229 --> 00:00:04.397
+Open Calculators and create a private floor slab study.
+
+00:00:04.397 --> 00:00:05.283
+Set a six-metre, 300 mm deep bonded strip. The tendon area, eccentricity and effective force will also feed the resistance calculation.
+
+00:00:05.283 --> 00:00:05.934
+Declare one physical bonded tendon layer at midspan. Enter the concrete data and the concrete strain at effective prestress; tension is positive.
+
+00:00:05.934 --> 00:00:14.836
+Paste the strain and stress pairs from the tendon curve. Here the curve is synthetic and is used only for training. Explicitly choose no ordinary bars for the first comparison.
+
+00:00:14.836 --> 00:00:20.345
+The ultimate demand is 64.530 kNm. The neutral axis is 50 mm below the top, giving 266.690 kNm of design resistance before adding ordinary bars.
+
+00:00:20.345 --> 00:00:28.262
+With 300 mm² of 500N bars at 260 mm depth, design resistance becomes 286.973 kNm. Read the minimum nominal strength and ductility checks separately. Overall design approval remains with the engineer.
+
+00:00:28.262 --> 00:00:33.399
+Issue the saved revision in Project Summary. The report preserves the current demand, resistance and native calculation appendix.

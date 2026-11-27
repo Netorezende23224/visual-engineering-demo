@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.229 --> 00:00:04.397
+Abra Calculators e crie um estudo privado de laje.
+
+00:00:04.397 --> 00:00:05.283
+Configure uma faixa aderente de seis metros e 300 mm de altura. A área, a excentricidade e a força efetiva dos tendões entram também na resistência.
+
+00:00:05.283 --> 00:00:05.934
+Declare uma camada física de tendões aderentes no meio do vão. Insira os dados do concreto e a deformação no estado efetivo de protensão, com tração positiva.
+
+00:00:05.934 --> 00:00:14.836
+Cole os pares de deformação e tensão da curva do tendão. A curva deste exemplo é sintética e serve para treinamento. Na primeira comparação, declare que não há barras comuns.
+
+00:00:14.836 --> 00:00:20.345
+A demanda última é 64,530 kNm. A linha neutra fica a 50 mm da face superior e a resistência de cálculo é 266,690 kNm antes da inclusão de barras comuns.
+
+00:00:20.345 --> 00:00:28.262
+Com 300 mm² de barras 500N a 260 mm do topo, a resistência passa a 286,973 kNm. Confira separadamente o mínimo nominal e a ductilidade. A aprovação do projeto cabe ao engenheiro.
+
+00:00:28.262 --> 00:00:33.399
+Emita a revisão salva no Project Summary. O relatório preserva demanda, resistência e memória de cálculo.
