@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.217 --> 00:00:01.201
+Save a 10 × 13 m workshop with south wind. Insert a 1.10 × 2.00 m door in the middle bay of the south wall.
+
+00:00:01.201 --> 00:00:05.152
+Keep door D1. Add window W1 in the same bay, with a 0.80 m sill and a 1.40 × 1.20 m clear opening.
+
+00:00:05.152 --> 00:00:09.819
+Isolate both opening frames. Next nominate D1 for the individual portal analysis, with W1 closed.
+
+00:00:09.819 --> 00:00:15.865
+Review a separate pair of coefficients for both leaves open together: +0.80 and −0.60. Calculate the project.
+
+00:00:15.865 --> 00:00:21.319
+Inspect the negative internal pressure case. At ultimate the south wall carries −60.054 kN along global X. The model keeps the jamb feet separate from the portal columns.
+
+00:00:21.319 --> 00:00:26.465
+The two central portals receive −16.848 and −18.520 kN from the south wall. Their different tributary widths reflect the actual door and window positions.
+
+00:00:26.465 --> 00:00:44.882
+In ULS 1.2G+W, member SH-009 on portal F3 reaches −24.812 kNm. Review each combination and service drift in the project report.
+
+00:00:44.882 --> 00:00:50.401
+Read the report in the project. Reopen the saved schedule and verify both marks and the group coefficients.

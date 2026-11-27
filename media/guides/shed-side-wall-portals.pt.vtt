@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.217 --> 00:00:01.201
+Salve um galpão de 10 × 13 m com vento de sul e uma porta de 1,10 × 2,00 m no vão central da parede sul.
+
+00:00:01.201 --> 00:00:05.152
+Mantenha a porta D1. Acrescente a janela W1 no mesmo vão, com peitoril a 0,80 m e abertura livre de 1,40 × 1,20 m.
+
+00:00:05.152 --> 00:00:09.819
+Isole os dois quadros. Em seguida, selecione D1 para a análise individual do pórtico, com W1 fechada.
+
+00:00:09.819 --> 00:00:15.865
+Informe um par independente para a porta e a janela abertas juntas: +0,80 e −0,60. Calcule o projeto.
+
+00:00:15.865 --> 00:00:21.319
+Abra o caso de pressão interna negativa. No estado último, a parede sul recebe −60,054 kN em X. Os pés dos montantes e os pilares dos pórticos recebem parcelas diferentes.
+
+00:00:21.319 --> 00:00:26.465
+Os dois pórticos centrais recebem −16,848 e −18,520 kN da parede sul. A diferença vem da posição real da porta e da janela.
+
+00:00:26.465 --> 00:00:44.882
+Na combinação última 1,2G+W, a barra SH-009 do pórtico F3 atinge −24,812 kNm. Consulte as outras combinações e o deslocamento em serviço no relatório.
+
+00:00:44.882 --> 00:00:50.401
+Leia o relatório no projeto. Reabra a lista salva e confira as duas marcas e os coeficientes do grupo.
