@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.408
+Contraventamento das paredes com fitas metálicas
+
+00:00:00.408 --> 00:00:02.566
+Comece na planta calibrada do térreo. Marque os trechos de parede com contraventamento, respeitando as aberturas.
+
+00:00:02.566 --> 00:00:05.412
+Em Roof & floor → Bracing, selecione fita G550 de 50 × 1 mm, parede de 2,70 m e painel de 2,40 m.
+
+00:00:05.412 --> 00:00:08.108
+Marque a parede sul em X. Cabem dois painéis completos no trecho norte e um no trecho sul.
+
+00:00:08.108 --> 00:00:16.103
+Escolha Y para as paredes oeste e leste. Cada trecho comporta um painel completo.
+
+00:00:16.103 --> 00:00:17.241
+Abra Wind & bracing → Floor bracing & portals. Aplique os casos de pressão do térreo em X e Y.
+
+00:00:17.241 --> 00:00:19.464
+Cada painel completo oferece 5,58 kN de resistência horizontal com a seção e os parafusos informados.
+
+00:00:19.464 --> 00:00:21.671
+Compare cada direção com a sua demanda. Há 16,74 kN disponíveis em X e 11,16 kN em Y.
+
+00:00:21.671 --> 00:00:25.176
+O grupo de parafusos governa neste exemplo. O engenheiro verifica a ancoragem, as paredes de apoio e o caminho das cargas.

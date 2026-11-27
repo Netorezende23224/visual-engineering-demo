@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.439
+Treliça de piso · exemplo calculado
+
+00:00:00.439 --> 00:00:01.160
+Escolha Parallel. Defina vão de 4,00 m entre apoios, altura de 400 mm e largura de influência de 600 mm.
+
+00:00:01.160 --> 00:00:03.493
+Aplique ao banzo superior 0,75 kPa de carga permanente e 1,50 kPa de sobrecarga. No inferior, aplique 0,20 kPa de carga permanente.
+
+00:00:03.493 --> 00:00:05.877
+Escolha perfis tubulares quadrados SHS 75 × 75 × 3 mm em aço G350 para os banzos e as diagonais.
+
+00:00:05.877 --> 00:00:09.480
+Escolha ligações internas parafusadas e calcule. Confira a utilização dos membros e a flecha em serviço.
+
+00:00:09.480 --> 00:00:11.634
+A utilização preliminar é de 6,5%. A flecha em serviço é de 0,50 mm para um limite de 15,00 mm.
+
+00:00:11.634 --> 00:00:12.594
+Troque as ligações internas para soldadas e recalcule com a mesma geometria e as mesmas cargas.
+
+00:00:12.594 --> 00:00:15.781
+Consulte a lista de ligações. Os detalhes de soldas e parafusos precisam de verificação própria.

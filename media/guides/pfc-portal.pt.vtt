@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.418
+Pórtico PFC · exemplo calculado
+
+00:00:00.418 --> 00:00:01.753
+Selecione o pórtico PF01 no vão residencial de 4,00 m. A altura é de 2,70 m, com bases engastadas.
+
+00:00:01.753 --> 00:00:04.166
+Confira a viga 200 PFC, habilite a seleção automática dos pilares e restrinja a busca à família PFC.
+
+00:00:04.166 --> 00:00:05.218
+Informe 15 kN de força lateral total em serviço. Aplique e recalcule.
+
+00:00:05.218 --> 00:00:08.515
+O programa seleciona pilares 150 PFC. Para esta viga, estes apoios e o limite de deslocamento, a capacidade lateral preliminar é de 16,97 kN.
+
+00:00:08.515 --> 00:00:12.044
+Revise o deslocamento e a interação entre força axial e momento. Verifique travamentos, ligações, chumbadores e fundações.

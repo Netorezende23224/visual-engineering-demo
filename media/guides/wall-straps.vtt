@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.408
+Wall Straps  ·  Worked example
+
+00:00:00.408 --> 00:00:02.566
+Start on the calibrated ground-floor plan. Place straps along solid wall runs; keep openings clear.
+
+00:00:02.566 --> 00:00:05.412
+Choose Roof & floor → Bracing. Select the 50 × 1 mm G550 strap, a 2.70 m wall and a 2.40 m panel.
+
+00:00:05.412 --> 00:00:08.108
+Trace the south wall in X. The north run holds two whole panels; this south run holds one.
+
+00:00:08.108 --> 00:00:16.103
+Set direction Y for the west and east wall runs. Each run fits one complete panel.
+
+00:00:16.103 --> 00:00:17.241
+Open Wind & bracing → Floor bracing & portals. Apply the ground-floor X and Y pressure cases.
+
+00:00:17.241 --> 00:00:19.464
+Each full panel provides 5.58 kN horizontal resistance under the entered section and screw assumptions.
+
+00:00:19.464 --> 00:00:21.671
+Read each wind direction separately: X has 16.74 kN available; Y has 11.16 kN. Check the reserve against demand.
+
+00:00:21.671 --> 00:00:25.176
+The screw group governs this example. The engineer must verify anchorage, supporting walls and the load path.

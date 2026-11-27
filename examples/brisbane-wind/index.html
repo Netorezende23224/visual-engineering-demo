@@ -1,0 +1,33 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Brisbane wind site · Visual Engineering</title><link rel="stylesheet" href="site-map.css"><link rel="stylesheet" href="site_context.css"></head>
+<body><main><a href="../../#watch-wind-site">← WindLab video</a><h1>Brisbane wind site</h1>
+<p id="site-location">1 William Street, Brisbane QLD 4000 · 27.47519° S, 153.02580° E</p>
+<nav aria-label="Public example sites"><a href="?site=the-gap">Yuruga Street · buildings and LiDAR</a> · <a href="?site=city">1 William Street · city wind case</a></nav>
+<div class="controls"><label>Map layer <select id="layer"><option value="streets">Street map</option><option value="cover">2021 land cover</option></select></label><label>Upwind sector <select id="direction"></select></label><label>Viewing radius <select id="radius"><option>350</option><option selected>700</option><option>1400</option></select> m</label></div>
+<figure><svg viewBox="-127 -127 254 254" role="img" aria-label="Site-centred map with eight true-north sectors and three distance bands"></svg>
+<figcaption><span id="status" role="status"></span> <a id="credit" href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></figcaption></figure>
+<section class="site-context" id="site-context" aria-labelledby="neighbourhood-heading">
+<h2 id="neighbourhood-heading">Buildings and ground profile</h2>
+<p id="context-location">Select a site to inspect its surroundings.</p>
+<a id="context-source" hidden>Saved survey sources, dates and licences</a>
+<button type="button" id="context-retry" disabled>Refresh buildings and elevation</button>
+<div class="context-grid">
+  <section><h3 id="obstacle-title">Upwind buildings</h3>
+    <p role="status" id="building-state"></p><div id="obstacle-bands"></div>
+    <label>Inspect a mapped footprint <select id="context-footprint" disabled></select></label>
+    <p id="footprint-detail"></p><p id="sector-terrain"></p>
+  </section>
+  <section><h3>Ground profile through the site</h3><p role="status" id="elevation-state"></p>
+    <svg viewBox="0 0 500 190" id="ground-profile" role="img" aria-label="Elevation along the selected wind direction"></svg>
+    <p id="slope-result"></p>
+  </section>
+</div>
+<details><summary>Survey basis and interpretation</summary>
+<p>Live footprints come from OpenStreetMap. The Yuruga Street extract also includes Microsoft and LiDAR-derived outlines, and measured LiDAR roof heights where available. Housing tags identify mapped residential buildings. Other buildings also act as obstacles. A footprint containing the site is excluded from neighbourhood counts. Each other building is assigned once, by its footprint centroid. Density is the count per hectare in each distance band. Height comes from a mapped height tag or a labelled estimate of 3 m per mapped floor. Missing heights remain unknown.</p>
+<p>Terrain candidates use footprint density, height evidence and, where available, mapped open land. These are screening assumptions. Confirm mapping completeness, trees and other obstacles, recent development and upwind terrain transitions before adopting TC.</p>
+<p>Live Terrain Tiles elevations sample eight true-north transects at 25 stations per ray. Profiles use a global elevation mosaic and may include vegetation or buildings. Local comparisons flag a possible crest when the site is within 2 m vertically of the profile high point, the high point is within 10% of the radius horizontally, and the site is at least 10 m above typical ground in the outer half on both sides. Confirm survey levels, ridge shape and upwind slope lengths before entering the topographic multiplier Mt.</p>
+<p>Map queries send the site coordinates and viewing radius to the data providers. <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors (ODbL)</a> · <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">Terrain Tiles sources and licences</a></p>
+</details></section>
+
+<div class="case"><section><h2 id="sector"></h2><ol id="bands"></ol><p>Viewing bands divide the radius into thirds. The engineer checks upwind fetch, obstacle heights, terrain transitions and shielding.</p></section>
+<section id="city-case"><h2>Worked west-wind case</h2><dl><dt>Indicative wind region</dt><dd>B1</dd><dt>ULS site speed</dt><dd>47.31 m/s</dd><dt>ULS velocity pressure</dt><dd>1.343 kPa</dd><dt>Windward wall field pressure</dt><dd>+0.940 kPa</dd></dl><p>These values are the recorded WindLab case for the example rectangular building. Selecting a map sector changes the area you inspect.</p></section></div>
+<p><a id="osm-pin" href="https://www.openstreetmap.org/?mlat=-27.47519&amp;mlon=153.02580#map=16/-27.47519/153.02580">Open this public location on OpenStreetMap</a> · <a href="https://doi.org/10.26186/146359">Geoscience Australia indicative regions</a> · <a href="https://esa-worldcover.org/en/data-access">ESA WorldCover</a></p></main><script src="site_context.js"></script><script src="site_context_ui.js"></script><script src="site-map.js"></script></body></html>

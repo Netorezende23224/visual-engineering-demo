@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.439
+Floor Truss  ·  Worked example
+
+00:00:00.439 --> 00:00:01.160
+Choose Parallel for a floor truss. Set a 4.0 m bearing span, 400 mm depth and 600 mm tributary width.
+
+00:00:01.160 --> 00:00:03.493
+Apply the floor loads: 0.75 kPa permanent and 1.50 kPa imposed on top, and 0.20 kPa permanent below.
+
+00:00:03.493 --> 00:00:05.877
+Select SHS for the chords and webs. The example uses 75 × 75 × 3 mm G350 sections.
+
+00:00:05.877 --> 00:00:09.480
+Choose bolted internal joints and calculate the floor truss. Review the member screen and service deflection.
+
+00:00:09.480 --> 00:00:11.634
+The member screen is 6.5%. Service deflection is 0.50 mm against 15.00 mm.
+
+00:00:11.634 --> 00:00:12.594
+Switch the internal joint method to welded and recalculate the same geometry and loads.
+
+00:00:12.594 --> 00:00:15.781
+Read the joint register separately. Passing the member and deflection screens does not approve bolt or weld details.

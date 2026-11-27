@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.418
+Pfc Portal  ·  Worked example
+
+00:00:00.418 --> 00:00:01.753
+Select portal PF01 across the 4.00 m residential opening. The frame is 2.70 m high with fixed bases.
+
+00:00:01.753 --> 00:00:04.166
+Review the 200 PFC top beam. Enable automatic column sizing and restrict the catalogue to PFC.
+
+00:00:04.166 --> 00:00:05.218
+Enter 15 kN as the total service lateral force on the portal. Apply the edit and recalculate.
+
+00:00:05.218 --> 00:00:08.515
+The solver selects 150 PFC columns. Preliminary lateral capacity is 16.97 kN for this beam, supports and drift limit.
+
+00:00:08.515 --> 00:00:12.044
+Review drift and combined axial force and moment. Verify restraints, connections, anchors and foundations for the project.

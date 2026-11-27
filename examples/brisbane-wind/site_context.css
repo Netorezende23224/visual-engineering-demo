@@ -1,0 +1,8 @@
+.site-context{margin:1.2rem 0;padding:1rem 0;border-top:1px solid #b5c8cd}
+.context-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1rem}
+.context-grid section{min-width:0}
+#ground-profile{width:100%;display:block;background:#f1f5f6;border:1px solid #c6d4d8}
+#context-footprint{max-width:100%}
+#obstacle-bands p,#sector-terrain,#slope-result,#footprint-detail{font-size:.94em}
+#context-retry:disabled{opacity:.6}
+.site-context details p{max-width:78ch}
