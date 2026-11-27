@@ -1,0 +1,8 @@
+.report { max-width: 62rem; }
+.report details { border-top: 1px solid #c5d1d5; padding-block: .65rem; margin: 0; }
+.report summary { cursor: pointer; font-weight: 650; }
+.register-scroll { overflow-x: auto; }
+.register-scroll table { width: 100%; border-collapse: collapse; margin: .65rem 0; font-variant-numeric: tabular-nums; }
+.register-scroll caption { text-align: left; font-weight: 650; }
+.register-scroll th, .register-scroll td { text-align: left; padding: .45rem; border-bottom: 1px solid #d4dcde; }
+.register-scroll th:nth-child(n+3), .register-scroll td:nth-child(n+3) { text-align: right; }

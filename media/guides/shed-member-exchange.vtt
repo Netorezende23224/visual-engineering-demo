@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.979 --> 00:00:04.149
+This three-bay workshop will be issued from one saved revision.
+
+00:00:04.149 --> 00:00:07.620
+Place a 1.1 m opening in the second bay of the right wall.
+
+00:00:07.620 --> 00:00:13.001
+The jambs and header become distinct members in the model.
+
+00:00:13.001 --> 00:00:16.004
+Calculate and review this revision before issuing its coordination files.
+
+00:00:16.004 --> 00:00:21.167
+DXF writes one 3D line per member, with its mark and section. Coordinates are in metres, with elevation on Z.
+
+00:00:21.167 --> 00:00:26.656
+The quantity register gives each member's length and the basis of its steel mass.
+
+00:00:26.656 --> 00:00:33.947
+IFC4 groups the same members by section and role within the building. Their axes follow the DXF coordinates.
+
+00:00:33.947 --> 00:00:39.568
+Editing the model suspends export until the next saved calculation. Construction requires the engineer's review.

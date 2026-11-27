@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.979 --> 00:00:04.149
+Vamos usar uma revisão salva deste galpão de três baias.
+
+00:00:04.149 --> 00:00:07.620
+Insira uma abertura de 1,1 m na segunda baia da parede direita.
+
+00:00:07.620 --> 00:00:13.001
+As jambas e a verga aparecem como barras distintas no modelo.
+
+00:00:13.001 --> 00:00:16.004
+Calcule e confira a revisão antes de emitir os arquivos de coordenação.
+
+00:00:16.004 --> 00:00:21.167
+O DXF registra o eixo 3D, a marca e o perfil de cada barra. As coordenadas estão em metros, com altura em Z.
+
+00:00:21.167 --> 00:00:26.656
+O quantitativo informa o comprimento de cada barra e a origem de sua massa de aço.
+
+00:00:26.656 --> 00:00:33.947
+O IFC4 agrupa as mesmas barras por perfil e função no edifício. Os eixos seguem as coordenadas do DXF.
+
+00:00:33.947 --> 00:00:39.568
+Após editar, salve e recalcule para emitir outra revisão. A construção depende da aprovação do engenheiro.
