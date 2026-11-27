@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.135 --> 00:00:02.724
+Crie um galpão privado de duas águas. O WindLab abre com as dimensões salvas.
+
+00:00:02.724 --> 00:00:06.848
+Selecione a face leste e o multiplicador topográfico de exemplo de 1,20. As velocidades regionais são de 40 e 28 m/s.
+
+00:00:06.848 --> 00:00:13.040
+Aplique o caso revisado. O servidor recalcula as pressões usando a geometria salva do galpão.
+
+00:00:13.040 --> 00:00:18.242
+Confira a parede leste com +1,106 kPa na combinação última e a oeste com −0,968 kPa. A tabela também mostra as pressões de serviço.
+
+00:00:18.242 --> 00:00:32.269
+Confira a força longitudinal e a demanda nas fitas, depois as verificações dos pórticos. A aprovação final cabe ao engenheiro.
+
+00:00:32.269 --> 00:00:37.011
+Reabra o WindLab a partir do projeto salvo para recuperar a face, os fatores de exposição e os coeficientes.
